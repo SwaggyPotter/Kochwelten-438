@@ -57,6 +57,7 @@ nav ul li{
 }
 nav ul li a{
     color: var(--text-color-dark);
+    font-family: var(--font-family);
     text-decoration: none;
     font-weight: bold;
     transition: 200ms ease-in-out;
@@ -84,8 +85,8 @@ nav ul li a:hover::after{
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root{
-    font-size: 62.5%;
-    font-family: 'Raleway', sans-serif;
+    --font-size: 62.5%;
+    --font-family: 'Raleway', sans-serif;
 
     --primary: #0c0c0c;
     --secondary: #190E08;
