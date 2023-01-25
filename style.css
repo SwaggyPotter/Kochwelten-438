@@ -27,10 +27,10 @@ body{
 .header-navbar{
     height: 100px;
     background-color: var(--background-bright);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    /* left: 0; */
     padding: 0px 64px 0px 64px;
     display: flex;
     justify-content: space-between;
