@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+
+    --primary: #0c0c0c;
+    --secondary: #190E08;
+    --button:  #268029;
+    --background-color-two: #ecebeb;
+}
+
+body{
+    margin: 0;
+}
+
+.headline-first{
+    padding: 0 20rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;    
+}
+
+.img-big{
+    display: flex;
+    justify-content: center;
+}
+
+
+.img-big-croissant{
+    width: 36rem;
+    height: 23rem;
+    border-radius: 2%;
+}
+
+.header-big-img{
+    color: var(--primary);
+    font-size: 2rem;
+    margin:0;
+    
+}
+
+.headline-big-img{
+    color: var(--secondary);
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.header-headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4rem;
+}
+
+
+.open-recipe{
+    background-color: var(--button);
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.section-two{
+    background-color: var(--background-color-two);
+    
+}
+
+.section-two-header{
+    text-align: center;
+    margin: 4rem;
+}
+
+.section-two-header h2{
+    padding: 2.3rem;
+}
+
+.section-two-image-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-two-image{
+    margin-bottom: 3rem;
+}
+
+.section-two-image img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 3%;
+    object-fit: cover;
+    display: flex;
+
+}
+
+.section-two-image p{
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.section-three-header{
+    text-align: center;
+}
+
+.section-three-image img{
+    height: 10rem;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 3%;
+
+}
+
+.section-three-image{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 4rem;
+}
