@@ -7,6 +7,7 @@
     /* set global Variable */
     --text-color-dark:black;
     --box-shadow: rgba(0,0,0, 0.2);
+    --hover-color: green;
 }
 /* section header */
 .header-navbar{
@@ -41,4 +42,8 @@ nav ul li{
 nav ul li a{
     color: var(--text-color-dark);
     text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--hover-color);
+    font-weight: bold;
 }
