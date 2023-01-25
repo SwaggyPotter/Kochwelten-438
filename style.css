@@ -38,6 +38,7 @@ nav ul{
 }
 nav ul li{
     height: 25px;/*distance to box-shadow for underline*/
+    text-align: center;
 }
 nav ul li a{
     color: var(--text-color-dark);
