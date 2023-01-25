@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 *{
     /* set html, body, every element */
     margin: 0;
@@ -81,7 +81,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-=======
+/* ======= */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root{
@@ -204,4 +204,4 @@ body{
     justify-content: center;
     gap: 4rem;
 }
->>>>>>> e684bea119edd3a5b55a18e1a8c1b87ebdea0f1d
+/* >>>>>>> e684bea119edd3a5b55a18e1a8c1b87ebdea0f1d */
