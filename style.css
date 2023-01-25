@@ -1,0 +1,9 @@
+*{
+    /* set html, body, every element */
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* set global Variable */
+    --text-color-dark:black;
+}
