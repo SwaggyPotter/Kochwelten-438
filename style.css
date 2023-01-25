@@ -6,13 +6,15 @@
 :root{
     /* set global Variable */
     --text-color-dark:black;
+    --background-bright:white;
+
     --box-shadow: rgba(0,0,0, 0.2);
     --hover-color: green;
 }
 /* section header */
 .header-navbar{
     height: 100px;
-    background-color: aqua;
+    background-color: var(--background-bright);
     position: absolute;
     top: 0;
     right: 0;
@@ -45,8 +47,24 @@ nav ul li a{
     color: var(--text-color-dark);
     text-decoration: none;
     font-weight: bold;
+    transition: 200ms ease-in-out;
+    position: relative;
 }
 nav ul li a:hover{
     color: var(--hover-color);
     font-weight: bold;
+}
+/* test */
+nav ul li a::after{
+    content: '';
+    height: 5px;
+    width: 0%;
+    background: var(--hover-color);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transition: 250ms ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
