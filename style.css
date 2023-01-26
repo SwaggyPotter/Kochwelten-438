@@ -1,15 +1,16 @@
 /* <<<<<<< HEAD */
-*{
+* {
     /* set html, body, every element */
     margin: 0;
     padding: 0;
 }
-:root{
-    /* set global Variable */
-    --text-color-dark:black;
-    --background-bright:white;
 
-    --box-shadow: rgba(0,0,0, 0.2);
+:root {
+    /* set global Variable */
+    --text-color-dark: black;
+    --background-bright: white;
+
+    --box-shadow: rgba(0, 0, 0, 0.2);
     --hover-color: green;
 
     font-size: 62.5%;
@@ -17,14 +18,16 @@
 
     --primary: #0c0c0c;
     --secondary: #190E08;
-    --button:  #268029;
+    --button: #268029;
     --background-color-two: #ecebeb;
 }
-body{
+
+body {
     margin: 0;
 }
+
 /* section header */
-.header-navbar{
+.header-navbar {
     height: 100px;
     background-color: var(--background-bright);
     /* position: absolute; */
@@ -37,25 +40,31 @@ body{
     align-items: center;
     box-shadow: 0px 5px 3px var(--box-shadow);
 }
-.header-navbar img{
+
+.header-navbar img {
     height: 80px;
 }
-nav{
+
+nav {
     height: 100%;
 }
-nav ul{
+
+nav ul {
     height: 100%;
-    gap: 16px; 
+    gap: 16px;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
-nav ul li{
-    height: 25px;/*distance to box-shadow for underline*/
+
+nav ul li {
+    height: 25px;
+    /*distance to box-shadow for underline*/
     text-align: center;
 }
-nav ul li a{
+
+nav ul li a {
     color: var(--text-color-dark);
     font-family: var(--font-family);
     text-decoration: none;
@@ -63,12 +72,14 @@ nav ul li a{
     transition: 200ms ease-in-out;
     position: relative;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: var(--hover-color);
     font-weight: bold;
 }
+
 /* test */
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     height: 5px;
     width: 0%;
@@ -78,60 +89,62 @@ nav ul li a::after{
     left: 0;
     transition: 250ms ease-in-out;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
+
 /* ======= */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-:root{
+:root {
     --font-size: 62.5%;
     --font-family: 'Raleway', sans-serif;
 
     --primary: #0c0c0c;
     --secondary: #190E08;
-    --button:  #268029;
+    --button: #268029;
     --background-color-two: #ecebeb;
 }
 
-body{
+body {
     margin: 0;
 }
 
-.headline-first{
+.headline-first {
     padding: 0 20rem;
     display: flex;
     justify-content: center;
-    align-items:center;    
+    align-items: center;
 }
 
-.img-big{
+.img-big {
     display: flex;
     justify-content: center;
 }
 
 
-.img-big-croissant{
+.img-big-croissant {
     width: 36rem;
     height: 23rem;
     border-radius: 2%;
 }
 
-.header-big-img{
+.header-big-img {
     color: var(--primary);
     font-size: 2rem;
-    margin:0;
-    
+    margin: 0;
+
 }
 
-.headline-big-img{
+.headline-big-img {
     color: var(--secondary);
     font-size: 1.2rem;
     padding-bottom: 0;
     padding-top: 0;
 }
 
-.header-headline{
+.header-headline {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,7 +152,7 @@ body{
 }
 
 
-.open-recipe{
+.open-recipe {
     background-color: var(--button);
     border: none;
     width: 15rem;
@@ -148,30 +161,30 @@ body{
     margin-bottom: 3rem;
 }
 
-.section-two{
+.section-two {
     background-color: var(--background-color-two);
-    
+
 }
 
-.section-two-header{
+.section-two-header {
     text-align: center;
     margin: 4rem;
 }
 
-.section-two-header h2{
+.section-two-header h2 {
     padding: 2.3rem;
 }
 
-.section-two-image-container{
+.section-two-image-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.section-two-image{
+.section-two-image {
     margin-bottom: 3rem;
 }
 
-.section-two-image img{
+.section-two-image img {
     width: 14rem;
     height: 14rem;
     border-radius: 3%;
@@ -180,17 +193,17 @@ body{
 
 }
 
-.section-two-image p{
+.section-two-image p {
     text-align: center;
     margin: 0;
     font-weight: bold;
 }
 
-.section-three-header{
+.section-three-header {
     text-align: center;
 }
 
-.section-three-image img{
+.section-three-image img {
     height: 10rem;
     width: 12rem;
     object-fit: cover;
@@ -198,10 +211,23 @@ body{
 
 }
 
-.section-three-image{
+.section-three-image {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     gap: 4rem;
 }
+
 /* >>>>>>> e684bea119edd3a5b55a18e1a8c1b87ebdea0f1d */
+
+
+
+/* >>>>>>> footer section*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+}
