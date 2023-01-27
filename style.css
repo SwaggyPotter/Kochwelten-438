@@ -301,7 +301,7 @@ footer a {
 }
 /* <<<<<<<<<<<<<<<<< Table >>>>>>>>>>>>>>>>>>>> */
 table {
-margin: 25px;
+margin-bottom: 25px;
     width: 100%;
   border-collapse: collapse;
 }
