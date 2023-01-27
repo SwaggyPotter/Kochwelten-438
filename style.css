@@ -247,3 +247,11 @@ footer a{
 .socialMediaIconStyle{
     width: 80px;
 }
+/* <<<<<<<<<<<<<<<<<<<<< Recipes >>>>>>>>>>>>>>>>>>>>>>*/
+.header-recipes{
+    padding: 0 20%;
+}
+.img-recipe{
+    width: 100%;
+    object-fit: cover;
+}
