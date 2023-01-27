@@ -246,6 +246,11 @@ footer a {
 }
 .recipe-head {
   border-bottom: 2px solid var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
 }
 .img-recipe {
   width: 100%;
@@ -254,7 +259,7 @@ footer a {
   object-fit: cover;
 }
 .menu-cards {
-  margin: 25px 0 50px 0;
+  margin: 0 0 50px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -342,7 +347,7 @@ table th {
     margin-top: 16px;
 }
 .creator{
-    margin-top: 16px;
+    margin: 16px 0 0 0;
     height: 64px;
     display: flex;
     align-items: center;
