@@ -282,3 +282,29 @@ footer a{
     width: 1em;
     height: 1em;
 }
+.recipe-ingredentien{
+    margin-top: 16px;
+}
+.recipe-portion-count{
+    gap: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.recipe-portion{
+    width: 20rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.recipe-portion input{
+    width: 50%;
+  height: 28px;
+    border: 1px solid var(--box-shadow);
+    border-radius: 5px 0 0 5px;
+}
+.recipe-portion button{
+    height: 100%;
+    width: 50%;
+    margin: 0;
+}
