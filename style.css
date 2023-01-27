@@ -1,310 +1,360 @@
 /* <<<<<<< HEAD */
 * {
-    /* set html, body, every element */
-    margin: 0;
-    padding: 0;
+  /* set html, body, every element */
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    /* set global Variable */
-    --text-color-dark: black;
-    --background-bright: white;
+  /* set global Variable */
+  --text-color-dark: black;
+  --background-bright: white;
 
-    --box-shadow: rgba(0, 0, 0, 0.2);
-    --hover-color: green;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --hover-color: green;
 
-    font-size: 62.5%;
-    font-family: 'Raleway', sans-serif;
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
 
-    --primary: #0c0c0c;
-    --secondary: #190E08;
-    --button: #268029;
-    --background-color-two: #ecebeb;
+  --primary: #0c0c0c;
+  --secondary: #190e08;
+  --button: #268029;
+  --background-color-two: #ecebeb;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* section header */
 .header-navbar {
-    height: 100px;
-    background-color: var(--background-bright);
-    /* position: absolute; */
-    /* top: 0; */
-    /* right: 0; */
-    /* left: 0; */
-    padding: 0px 64px 0px 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 5px 3px var(--box-shadow);
+  height: 100px;
+  background-color: var(--background-bright);
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* left: 0; */
+  padding: 0px 64px 0px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 3px var(--box-shadow);
 }
 
 .header-navbar img {
-    height: 80px;
+  height: 80px;
 }
 
 nav {
-    height: 100%;
+  height: 100%;
 }
 
 nav ul {
-    height: 100%;
-    gap: 16px;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  height: 100%;
+  gap: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 nav ul li {
-    height: 25px;
-    /*distance to box-shadow for underline*/
-    text-align: center;
+  height: 25px;
+  /*distance to box-shadow for underline*/
+  text-align: center;
 }
 
 nav ul li a {
-    color: var(--text-color-dark);
-    font-family: var(--font-family);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 200ms ease-in-out;
-    position: relative;
+  color: var(--text-color-dark);
+  font-family: var(--font-family);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 200ms ease-in-out;
+  position: relative;
 }
 
 nav ul li a:hover {
-    color: var(--hover-color);
-    font-weight: bold;
+  color: var(--hover-color);
+  font-weight: bold;
 }
 
 /* test */
 nav ul li a::after {
-    content: '';
-    height: 5px;
-    width: 0%;
-    background: var(--hover-color);
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    transition: 250ms ease-in-out;
+  content: "";
+  height: 5px;
+  width: 0%;
+  background: var(--hover-color);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: 250ms ease-in-out;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* ======= */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 :root {
-    --font-size: 62.5%;
-    --font-family: 'Raleway', sans-serif;
+  --font-size: 62.5%;
+  --font-family: "Raleway", sans-serif;
 
-    --primary: #0c0c0c;
-    --secondary: #190E08;
-    --button: #268029;
-    --background-color-two: #ecebeb;
+  --primary: #0c0c0c;
+  --secondary: #190e08;
+  --button: #268029;
+  --background-color-two: #ecebeb;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .headline-first {
-    padding: 0 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 0 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-big {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
 .img-big-croissant {
-    width: 36rem;
-    height: 23rem;
-    border-radius: 2%;
+  width: 36rem;
+  height: 23rem;
+  border-radius: 2%;
 }
 
 .header-big-img {
-    color: var(--primary);
-    font-size: 2rem;
-    margin: 0;
-
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 0;
 }
 
 .headline-big-img {
-    color: var(--secondary);
-    font-size: 1.2rem;
-    padding-bottom: 0;
-    padding-top: 0;
+  color: var(--secondary);
+  font-size: 1.2rem;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .header-headline {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 4rem;
 }
 
-
 .open-recipe {
-    background-color: var(--button);
-    border: none;
-    width: 15rem;
-    height: 3rem;
-    color: white;
-    margin-bottom: 3rem;
+  background-color: var(--button);
+  border: none;
+  width: 15rem;
+  height: 3rem;
+  color: white;
+  margin-bottom: 3rem;
 }
 
 .section-two {
-    background-color: var(--background-color-two);
-
+  background-color: var(--background-color-two);
 }
 
 .section-two-header {
-    text-align: center;
-    margin: 4rem;
+  text-align: center;
+  margin: 4rem;
 }
 
 .section-two-header h2 {
-    padding: 2.3rem;
+  padding: 2.3rem;
 }
 
 .section-two-image-container {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .section-two-image {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .section-two-image img {
-    width: 14rem;
-    height: 14rem;
-    border-radius: 3%;
-    object-fit: cover;
-    display: flex;
-
+  width: 14rem;
+  height: 14rem;
+  border-radius: 3%;
+  object-fit: cover;
+  display: flex;
 }
 
 .section-two-image p {
-    text-align: center;
-    margin: 0;
-    font-weight: bold;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
 }
 
 .section-three-header {
-    text-align: center;
+  text-align: center;
 }
 
 .section-three-image img {
-    height: 10rem;
-    width: 12rem;
-    object-fit: cover;
-    border-radius: 3%;
-
+  height: 10rem;
+  width: 12rem;
+  object-fit: cover;
+  border-radius: 3%;
 }
 
 .section-three-image {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 4rem;
 }
 
 /* >>>>>>> e684bea119edd3a5b55a18e1a8c1b87ebdea0f1d */
 
-
-
 /* >>>>>>> footer section*/
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content:space-between;
-    background-color: rgba(128, 128, 128, 0.5);
-    padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 20px;
 }
 
-footer h3{
-    padding: 5px;
+footer h3 {
+  padding: 5px;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
-.socialMediaIconStyle{
-    width: 80px;
+.socialMediaIconStyle {
+  width: 80px;
 }
 /* <<<<<<<<<<<<<<<<<<<<< Recipes >>>>>>>>>>>>>>>>>>>>>>*/
-.recipes{
-    margin: 100px 0 ;
-    padding: 0 20%;
+.recipes {
+  margin: 100px 0;
+  padding: 0 20%;
 }
-.recipe-head{
-    border-bottom: 2px solid var(--box-shadow);
+.recipe-head {
+  border-bottom: 2px solid var(--box-shadow);
 }
-.img-recipe{
+.img-recipe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.menu-cards {
+  margin: 25px 0 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+.menu-card {
+  min-width: fit-content;
+  background-color: var(--box-shadow);
+  gap: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card img {
+  width: 1em;
+  height: 1em;
+}
+/* <<<<<<<<<<<<<< Input, Button>>>>>>>>>>>>>>>>>> */
+.recipe-portion-count {
+    margin: 8px 0;
+  gap: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.recipe-portion {
+  width: 20rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.recipe-portion input {
+  width: 50%;
+  height: 28px;
+  border: 1px solid var(--box-shadow);
+  border-radius: 5px 0 0 5px;
+}
+.recipe-portion button {
+  height: 100%;
+  width: 50%;
+  margin: 0;
+}
+/* <<<<<<<<<<<<<<<<< Table >>>>>>>>>>>>>>>>>>>> */
+table {
+margin: 25px;
     width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    object-fit: cover;
+  border-collapse: collapse;
 }
-.menu-cards{
-    margin: 25px 0 50px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 32px;
+table td,
+table th {
+  padding: 8px;
+  border-radius: 5px;
 }
-.menu-card{
-    min-width: fit-content;
-    background-color: var(--box-shadow);
-    gap: 16px;
-    padding: 8px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+table tr{
+    background-color: #f2f2f2;
 }
-.menu-card img{
-    width: 1em;
-    height: 1em;
+
+table tr:nth-child(even) {
+  background-color: var(--background-bright);
 }
-.recipe-ingredentien{
+
+table tr:hover {
+  background-color: #ddd;
+}
+table td{
+    padding-left: 32px;
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.add {
+  margin-top: 24px;
+}
+/* <<<<<<<<<<< Preperation >>>>>>>>>>>>>> */
+.preperation .menu-cards{
+    margin: 16px 0;
+}
+.recipe-creator{
     margin-top: 16px;
 }
-.recipe-portion-count{
+.creator{
+    margin-top: 16px;
+    height: 64px;
+    display: flex;
+    align-items: center;
     gap: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
-.recipe-portion{
-    width: 20rem;
-    height: 30px;
-    display: flex;
-    align-items: center;
+.creator img{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.recipe-portion input{
-    width: 50%;
-  height: 28px;
-    border: 1px solid var(--box-shadow);
-    border-radius: 5px 0 0 5px;
-}
-.recipe-portion button{
-    height: 100%;
-    width: 50%;
-    margin: 0;
-}
+.creator p{
+    font-size: 16px;
+} 
