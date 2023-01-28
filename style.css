@@ -280,7 +280,7 @@ footer a {
   height: 1em;
 }
 /* <<<<<<<<<<<<<< Input, Button>>>>>>>>>>>>>>>>>> */
-.recipe-portion-count {
+.portion {
     margin: 8px 0;
   gap: 16px;
   display: flex;
@@ -306,13 +306,13 @@ footer a {
 }
 /* <<<<<<<<<<<<<<<<< Table >>>>>>>>>>>>>>>>>>>> */
 table {
-margin-bottom: 25px;
+    margin-bottom: 25px;
     width: 100%;
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
-table tr{
+/* table tr{
     background-color: #f2f2f2;
-}
+} */
 tbody:nth-child(even) {
   background-color: #f2f2f2;
 }
