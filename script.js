@@ -72,7 +72,7 @@ function renderTable(){
     // table
     // document.getElementById(`#`).innerHTML = `${recipe["quantity"]}`;
     // document.getElementById(`#`).innerHTML = `${recipe["unit"]}`;
-    document.getElementById("recipe-table-ingredentien").innerHTML += /*html*/`
+    document.getElementById("table-ingredient").innerHTML += /*html*/`
     <tr>
         <td class="td-number">${quantity}</td>
         <td class="td-unit">${unit}</td>
@@ -94,7 +94,7 @@ function renderRecipe(){
     document.getElementById(`recipe-card-brain`).innerHTML = `${recipe["difficulty"]}`;
     document.getElementById(`recipe-card-calender`).innerHTML = ` ${recipe["calender"]}`;
     // recipe
-    document.getElementById(`current-recipe`).innerHTML = `${recipe["preparation"]}`;
+    document.getElementById(`preperation-recipe`).innerHTML = `${recipe["preparation"]}`;
     // creator
     document.getElementById(`img-creator`).src = `${recipe["profilPic"]}`;
     document.getElementById(`name-creator`).innerHTML = `${recipe["creator"]}`;

@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="renderRecipe()">
-    
     <header class="header">
       <!-- todo font-family -->
       <div class="header-navbar">
@@ -36,7 +35,6 @@
     </header>
 
     <section class="recipes">
-
       <div class="section-recipe-head">
         <h1 id="recipe-headline">Griechischer Bauernsalat</h1>
         <img
@@ -63,72 +61,69 @@
         <!-- <<<<<<<<<<<<<<< ?Hashtags? >>>>>>>>>>>>>>>>>>>>-->
       </div>
 
-      <section class="recipe-ingredentien">
-        <div class="recipe-portion-count">
-          <p>Zutaten für</p>
+      <div class="portion">
+        <p>Zutaten für</p>
 
-          <div class="recipe-portion">
-            <input
-              type="number"
-              aria-valuemin="1"
-              value="2"
-            /><!-- todo input corrrect not -1-->
-            <button class="open-recipe" onclick="portion()">Portionen</button>
-          </div>
+        <div class="recipe-portion">
+          <input
+            type="number"
+            aria-valuemin="1"
+            value="2"
+          /><!-- todo input corrrect not -1-->
+          <button class="open-recipe" onclick="portion()">Portionen</button>
         </div>
+      </div>
 
-        <table id="recipe-table-ingredentien">
-            <!-- <tr>
+      <table id="table-ingredient">
+        <!-- <tr>
               <td class="td-number">test 1</td>
               <td class="td-unit">versuche</td>
               <td class="td-ingredient">füürs Design</td>
             </tr> -->
-        </table>
+      </table>
 
-        <div class="preperation">
-          <h1>Zubereitung</h1>
-          <!-- ! 2x? -->
-          <div class="menu-cards">
-            <div class="menu-card">
-              <img src="img/icons/clock-regular.svg" alt="clock" />
-              <p id="recipe-card-clock">ca. 15 Minuten</p>
-            </div>
-
-            <div class="menu-card">
-              <img src="img/icons/clock-regular.svg" alt="brain" />
-              <p id="recipe-lengthOfTime">Gesamtzeit ca. 15 Minuten</p>
-            </div>
+      <div class="preperation">
+        <h1>Zubereitung</h1>
+        <!-- ! 2x? -->
+        <div class="menu-cards">
+          <div class="menu-card">
+            <img src="img/icons/clock-regular.svg" alt="clock" />
+            <p id="recipe-card-clock">ca. 15 Minuten</p>
           </div>
-          <p id="current-recipe">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            rerum ut at ipsam impedit beatae enim eaque dolorum quibusdam alias,
-            corrupti commodi assumenda autem magni nisi quis dicta odio
-            perspiciatis natus architecto, consequuntur reiciendis vero. Quaerat
-            omnis asperiores reiciendis minus doloribus adipisci eum ad in
-            perspiciatis reprehenderit a eos fuga laboriosam sit assumenda, hic
-            distinctio. Reiciendis quibusdam quas fugiat! Quia qui sint vero.
-            Commodi voluptas nisi optio iste expedita quod adipisci iure
-            voluptatem doloremque dolor repudiandae deserunt reiciendis sit sed
-            porro voluptates, debitis saepe placeat unde atque fugit. Illo
-            praesentium doloribus quo! Quaerat fugiat rerum eveniet porro
-            laborum sapiente, earum voluptas modi veritatis itaque in dicta
-            omnis velit magni molestias quae ad dignissimos, saepe dolorum
-            doloribus quam minus. Aspernatur, saepe, delectus laboriosam
-            voluptatibus expedita minus eaque ex repellendus animi modi libero
-            aliquid autem natus explicabo molestiae aliquam ipsum pariatur illum
-            reiciendis et. Eius veniam repudiandae distinctio nam ullam
-            perspiciatis expedita!
-          </p>
-        </div>
 
-        <div class="recipe-creator">
-          <h3>Rezept erstellt von</h3>
-          <div class="creator">
-            <img id="img-creator" src="img/profile.png" alt="Profilbild" />
-            <p id="name-creator">Tim, Sanjaya, Mathias</p>
+          <div class="menu-card">
+            <img src="img/icons/clock-regular.svg" alt="brain" />
+            <p id="recipe-lengthOfTime">Gesamtzeit ca. 15 Minuten</p>
           </div>
         </div>
-      </section>
+        <p id="preperation-recipe">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          rerum ut at ipsam impedit beatae enim eaque dolorum quibusdam alias,
+          corrupti commodi assumenda autem magni nisi quis dicta odio
+          perspiciatis natus architecto, consequuntur reiciendis vero. Quaerat
+          omnis asperiores reiciendis minus doloribus adipisci eum ad in
+          perspiciatis reprehenderit a eos fuga laboriosam sit assumenda, hic
+          distinctio. Reiciendis quibusdam quas fugiat! Quia qui sint vero.
+          Commodi voluptas nisi optio iste expedita quod adipisci iure
+          voluptatem doloremque dolor repudiandae deserunt reiciendis sit sed
+          porro voluptates, debitis saepe placeat unde atque fugit. Illo
+          praesentium doloribus quo! Quaerat fugiat rerum eveniet porro laborum
+          sapiente, earum voluptas modi veritatis itaque in dicta omnis velit
+          magni molestias quae ad dignissimos, saepe dolorum doloribus quam
+          minus. Aspernatur, saepe, delectus laboriosam voluptatibus expedita
+          minus eaque ex repellendus animi modi libero aliquid autem natus
+          explicabo molestiae aliquam ipsum pariatur illum reiciendis et. Eius
+          veniam repudiandae distinctio nam ullam perspiciatis expedita!
+        </p>
+      </div>
+
+      <div class="recipe-creator">
+        <h3>Rezept erstellt von</h3>
+        <div class="creator">
+          <img id="img-creator" src="img/profile.png" alt="Profilbild" />
+          <p id="name-creator">Tim, Sanjaya, Mathias</p>
+        </div>
+      </div>
     </section>
 
     <footer>
