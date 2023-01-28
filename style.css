@@ -244,7 +244,7 @@ footer a {
   margin: 100px 0;
   padding: 0 20%;
 }
-.recipe-head {
+.section-recipe-head {
   border-bottom: 2px solid var(--box-shadow);
   display: flex;
   flex-direction: column;
@@ -310,11 +310,6 @@ margin-bottom: 25px;
     width: 100%;
   border-collapse: collapse;
 }
-table td,
-table th {
-  padding: 8px;
-  border-radius: 5px;
-}
 table tr{
     background-color: #f2f2f2;
 }
@@ -326,15 +321,30 @@ table tr:nth-child(even) {
 table tr:hover {
   background-color: #ddd;
 }
-table td{
+/* table td{
     padding-left: 32px;
-}
+} */
 table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: #04aa6d;
   color: white;
+}
+.td-number{
+  width: 50px;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+}
+.td-unit{
+  width: 100px;
+  min-width: max-content;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+}
+.td-ingredient{
+  padding: 8px 0px 8px 0px;
+  text-align: start;
 }
 .add {
   margin-top: 24px;
