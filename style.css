@@ -258,14 +258,14 @@ footer a {
   border-radius: 10px;
   object-fit: cover;
 }
-.menu-cards {
+.labels {
   margin: 0 0 50px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 32px;
 }
-.menu-card {
+.lable {
   min-width: fit-content;
   background-color: var(--box-shadow);
   gap: 8px;
@@ -275,7 +275,7 @@ footer a {
   justify-content: center;
   align-items: center;
 }
-.menu-card img {
+.lable img {
   width: 1em;
   height: 1em;
 }
@@ -330,6 +330,7 @@ table th {
   width: 50px;
   padding: 8px 8px 8px 0px;
   text-align: right;
+  border-radius: 5px 0 0 5px;
 }
 .td-unit{
   width: 100px;
@@ -340,9 +341,10 @@ table th {
 .td-ingredient{
   padding: 8px 0px 8px 0px;
   text-align: start;
+  border-radius: 0 5px 5px 0;
 }
 /* <<<<<<<<<<< Preperation >>>>>>>>>>>>>> */
-.preperation .menu-cards{
+.preperation .labels{
     margin: 16px 0;
 }
 .recipe-creator{

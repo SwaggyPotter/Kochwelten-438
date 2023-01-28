@@ -93,6 +93,8 @@ function renderRecipe(){
     document.getElementById(`recipe-card-clock`).innerHTML = `ca. ${recipe["time"]}`;
     document.getElementById(`recipe-card-brain`).innerHTML = `${recipe["difficulty"]}`;
     document.getElementById(`recipe-card-calender`).innerHTML = ` ${recipe["calender"]}`;
+    document.getElementById(`lablePreperationClock`).innerHTML = `ca. ${recipe["time"]}`;
+    document.getElementById(`lableLengthOfTime`).innerHTML = `Gesamtzeit ca. ${recipe["time"]}`;
     // recipe
     document.getElementById(`preperation-recipe`).innerHTML = `${recipe["preparation"]}`;
     // creator
