@@ -14,7 +14,7 @@ let recipes = [
 //     
     // table
     "quantity" : ['200', '200', '200', '200', '5','4','150','5','','1','1','','1','3',''],
-    "unit" : ['g','g','g','g','Anzahl','Anzahl','g','Anzahl','g','','EL','Anzahl','','TL','Zehen',''],
+    "unit" : ['g','g','g','g','Anzahl','Anzahl','g','Anzahl','','EL','Anzahl','','TL','Zehen',''],
     "ingredient" : ['Salami','Jagdwurst','Geflügelwurst','Schinkenspeck, gewürfelt','Zwiebel(n)',`Paprikaschote(n)`,'Tomatenmark','Gewürzgurke(n)','Gurkensud','Sambal Olek','Lorbeerblatt','Brühe, fette','Senf','Knoblauch','saure Sahne'],
     "preparation" : `Den Speck anbraten, die gewürfelte Wurst dazugeben (noch nicht die Salami!) und alles schön anbraten. Dann die Salami dazugeben. Kurz weiterbraten, die Zwiebel mit in den Topf geben und weiterbraten, bis die Zwiebeln glasig sind. Falls es ansetzen sollte, ein wenig Wasser dazugeben.<br>
                     Nun die gewürfelten Paprika, das Tomatenmark und den zerdrückten Knoblauch dazugeben, etwas anbraten. Dann die klein geschnittenen Gurken, etwas Gurkenwasser und sämtliche Gewürze dazugeben. Mit 1 bis 1 1/2 Liter Wasser aufgießen, die fette Brühe dazugeben und 20 Minuten leicht köcheln lassen.<br>
@@ -58,7 +58,28 @@ function render(){
 // >>open RecipeSite
 function addrecipe(i){//load with param
     window.open(`recipe.html`,'_blank');
-    localStorage.setItem('recipeNumber',`${i}`);//save param local
+    localStorage.setItem('recipeNumber',`${i}`);//save 'key' , 'param local'
+}
+function renderTable(){
+    let i = localStorage.getItem('recipeNumber', '${i}');
+    let recipe = recipes[i];
+
+    for(a = 0 ; a < recipe["ingredient"].length ; a++){
+        const ingredient = recipe["ingredient"][a];
+        const unit = recipe["unit"][a];
+        const quantity = recipe["quantity"][a];
+
+    // table
+    // document.getElementById(`#`).innerHTML = `${recipe["quantity"]}`;
+    // document.getElementById(`#`).innerHTML = `${recipe["unit"]}`;
+    document.getElementById("recipe-table-ingredentien").innerHTML += /*html*/`
+    <tr>
+        <td class="td-number">${quantity}</td>
+        <td class="td-unit">${unit}</td>
+        <td class="td-ingredient">${ingredient}</td>
+    </tr>
+    `;
+}
 }
 // push section-recipe-head
 function renderRecipe(){
@@ -77,25 +98,6 @@ function renderRecipe(){
     // creator
     document.getElementById(`img-creator`).src = `${recipe["profilPic"]}`;
     document.getElementById(`name-creator`).innerHTML = `${recipe["creator"]}`;
-}
-function renderTable(){
-    let i = localStorage.getItem('recipeNumber', `${i}`);
-    let recipe = recipes[i];
-
-    for(o = 0 ; o < recipe["ingredient"].length ; o++){
-        let quantity = recipe["quantity"][0];
-        let unit = recipe["unit"][0];
-        let ingredient = recipe["ingredient"][0];
-
-    // table
-    // document.getElementById(`#`).innerHTML = `${recipe["quantity"]}`;
-    // document.getElementById(`#`).innerHTML = `${recipe["unit"]}`;
-    document.getElementById(`recipe-table-ingredentien`).innerHTML += /*html*/`
-    <tr>
-        <td class="td-number">${quantity}</td>
-        <td class="td-unit">${unit}</td>
-        <td class="td-ingredient">${ingredient}</td>
-    </tr>
-    `;
-}
+    //table
+    renderTable();
 }
