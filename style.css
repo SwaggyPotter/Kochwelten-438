@@ -313,8 +313,8 @@ margin-bottom: 25px;
 table tr{
     background-color: #f2f2f2;
 }
-table tr:nth-child(even) {
-  background-color: var(--background-bright);
+tbody:nth-child(even) {
+  background-color: #f2f2f2;
 }
 table tr:hover {
   background-color: #ddd;
@@ -328,14 +328,14 @@ table th {
 }
 .td-number{
   width: 50px;
-  padding: 8px 0px 8px 0px;
-  text-align: center;
+  padding: 8px 8px 8px 0px;
+  text-align: right;
 }
 .td-unit{
   width: 100px;
   min-width: max-content;
   padding: 8px 0px 8px 0px;
-  text-align: center;
+  text-align: left;
 }
 .td-ingredient{
   padding: 8px 0px 8px 0px;
