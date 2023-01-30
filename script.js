@@ -12,9 +12,9 @@ let recipes = [
 // 
 // <<<<<<<<<<<< other card
 //     
-    // table
+    // table quantity for 1 person
     "portion" : 4,
-    "quantity" : ['200', '200', '200', '200', '5','4','150','5','','1','1','','1','3',''],
+    "quantity" : ['50', '50', '50', '50', '1.25','1','37.5','1.25','','0.25','0.25','','0.25','0.75',''],
     "unit" : ['g','g','g','g','Anzahl','Anzahl','g','Anzahl','','EL','Anzahl','','TL','Zehen',''],
     "ingredient" : ['Salami','Jagdwurst','Geflügelwurst','Schinkenspeck, gewürfelt','Zwiebel(n)',`Paprikaschote(n)`,'Tomatenmark','Gewürzgurke(n)','Gurkensud','Sambal Olek','Lorbeerblatt','Brühe, fette','Senf','Knoblauch','saure Sahne'],
     "preparation" : `Den Speck anbraten, die gewürfelte Wurst dazugeben (noch nicht die Salami!) und alles schön anbraten. Dann die Salami dazugeben. Kurz weiterbraten, die Zwiebel mit in den Topf geben und weiterbraten, bis die Zwiebeln glasig sind. Falls es ansetzen sollte, ein wenig Wasser dazugeben.<br>
@@ -65,13 +65,16 @@ function renderTable(){
     let i = localStorage.getItem('recipeNumber', '${i}');
     let recipe = recipes[i];
 
+    document.getElementById("table-ingredient").innerHTML = '';
+
     for(a = 0 ; a < recipe["ingredient"].length ; a++){
         const ingredient = recipe["ingredient"][a];
         const unit = recipe["unit"][a];
         const quantity = recipe["quantity"][a];
 
-        let currentlyPortion = document.getElementById('input-portion').value;//! Portionierung verbessern
+        let currentlyPortion = document.getElementById('input-portion').value;
     
+        
     document.getElementById("table-ingredient").innerHTML += /*html*/`
     <tr>
         <td class="td-number">${quantity * currentlyPortion}</td>
@@ -98,7 +101,7 @@ function renderRecipe(){
     // portion
     document.getElementById(`input-portion`).innerHTML = `${recipe["portion"]}`;
     // recipe
-    document.getElementById(`preperation-recipe`).value = `${recipe["preparation"]}`;
+    // document.getElementById(`preperation-recipe`).value = `${recipe["preparation"]}`.value;
     // creator
     document.getElementById(`img-creator`).src = `${recipe["profilPic"]}`;
     document.getElementById(`name-creator`).innerHTML = `${recipe["creator"]}`;
