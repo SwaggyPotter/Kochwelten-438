@@ -13,6 +13,7 @@ let recipes = [
 // <<<<<<<<<<<< other card
 //     
     // table
+    "portion" : 4,
     "quantity" : ['200', '200', '200', '200', '5','4','150','5','','1','1','','1','3',''],
     "unit" : ['g','g','g','g','Anzahl','Anzahl','g','Anzahl','','EL','Anzahl','','TL','Zehen',''],
     "ingredient" : ['Salami','Jagdwurst','Geflügelwurst','Schinkenspeck, gewürfelt','Zwiebel(n)',`Paprikaschote(n)`,'Tomatenmark','Gewürzgurke(n)','Gurkensud','Sambal Olek','Lorbeerblatt','Brühe, fette','Senf','Knoblauch','saure Sahne'],
@@ -69,12 +70,11 @@ function renderTable(){
         const unit = recipe["unit"][a];
         const quantity = recipe["quantity"][a];
 
-    // table
-    // document.getElementById(`#`).innerHTML = `${recipe["quantity"]}`;
-    // document.getElementById(`#`).innerHTML = `${recipe["unit"]}`;
+        let currentlyPortion = document.getElementById('input-portion').value;//! Portionierung verbessern
+    
     document.getElementById("table-ingredient").innerHTML += /*html*/`
     <tr>
-        <td class="td-number">${quantity}</td>
+        <td class="td-number">${quantity * currentlyPortion}</td>
         <td class="td-unit">${unit}</td>
         <td class="td-ingredient">${ingredient}</td>
     </tr>
@@ -95,8 +95,10 @@ function renderRecipe(){
     document.getElementById(`recipe-card-calender`).innerHTML = ` ${recipe["calender"]}`;
     document.getElementById(`lablePreperationClock`).innerHTML = `ca. ${recipe["time"]}`;
     document.getElementById(`lableLengthOfTime`).innerHTML = `Gesamtzeit ca. ${recipe["time"]}`;
+    // portion
+    document.getElementById(`input-portion`).innerHTML = `${recipe["portion"]}`;
     // recipe
-    document.getElementById(`preperation-recipe`).innerHTML = `${recipe["preparation"]}`;
+    document.getElementById(`preperation-recipe`).value = `${recipe["preparation"]}`;
     // creator
     document.getElementById(`img-creator`).src = `${recipe["profilPic"]}`;
     document.getElementById(`name-creator`).innerHTML = `${recipe["creator"]}`;
