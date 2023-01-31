@@ -240,11 +240,13 @@ footer a {
   width: 80px;
 }
 /* <<<<<<<<<<<<<<<<<<<<< Recipes >>>>>>>>>>>>>>>>>>>>>>*/
-.recipes {
+.recipe-head {
   margin: 100px 0;
-  padding: 0 20%;
 }
-.section-recipe-head {
+.padding{
+padding: 0 20%;
+}
+.recipe-header {
   border-bottom: 2px solid var(--box-shadow);
   display: flex;
   flex-direction: column;

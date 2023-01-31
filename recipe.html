@@ -35,8 +35,8 @@
       </div>
     </header>
 
-    <section class="recipes">
-      <div class="section-recipe-head">
+      <section class="recipe-head padding">
+      <div class="recipe-header">
         <h1 id="recipe-headline">Griechischer Bauernsalat</h1>
         <img
           class="img-recipe"
@@ -59,12 +59,14 @@
             <p id="recipe-card-calender">28.09.2020</p>
           </div>
         </div>
-        <!-- <<<<<<<<<<<<<<< ?Hashtags? >>>>>>>>>>>>>>>>>>>>-->
+        <!-- <<<<<<<<<<<<<<< ?more lables? >>>>>>>>>>>>>>>>>>>>-->
       </div>
+    </section>
+
+    <section class="recipe-body padding">
 
       <div class="portion">
         <p>Zutaten für</p>
-
         <div class="recipe-portion">
           <input id="input-portion" type="number" min="1" value="2"/><!-- todo input multyplicate-->
           <button class="open-recipe" onclick="renderTable()">Portionen</button>
@@ -72,17 +74,13 @@
       </div>
 
       <table id="table-ingredient">
-        <!-- <tr>
-              <td class="td-number">test 1</td>
-              <td class="td-unit">versuche</td>
-              <td class="td-ingredient">füürs Design</td>
-            </tr> -->
       </table>
 
       <div class="preperation">
         <h1>Zubereitung</h1>
         <!-- ! 2x? -->
         <div class="labels">
+
           <div class="lable">
             <img src="img/icons/clock-regular.svg" alt="clock" />
             <p id="lablePreperationClock">ca. 15 Minuten</p>
@@ -92,6 +90,7 @@
             <img src="img/icons/clock-regular.svg" alt="brain" />
             <p id="lableLengthOfTime">Gesamtzeit ca. 15 Minuten</p>
           </div>
+
         </div>
         <p id="preperation-recipe">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
@@ -113,15 +112,15 @@
           veniam repudiandae distinctio nam ullam perspiciatis expedita!
         </p>
       </div>
+    </section>
 
-      <div class="recipe-creator">
+      <section class="recipe-creator padding">
         <h3>Rezept erstellt von</h3>
         <div class="creator">
           <img id="img-creator" src="img/profile.png" alt="Profilbild" />
           <p id="name-creator">Tim, Sanjaya, Mathias</p>
         </div>
-      </div>
-    </section>
+      </section>
 
     <footer>
       <div>
