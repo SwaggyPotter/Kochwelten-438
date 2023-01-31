@@ -239,13 +239,16 @@ footer a {
 .socialMediaIconStyle {
   width: 80px;
 }
+
 /* <<<<<<<<<<<<<<<<<<<<< Recipes >>>>>>>>>>>>>>>>>>>>>>*/
 .recipe-head {
   margin-top: 100px;
 }
-.padding{
-padding: 0 20%;
+
+.padding {
+  padding: 0 20%;
 }
+
 .recipe-header {
   border-bottom: 2px solid var(--box-shadow);
   display: flex;
@@ -254,12 +257,14 @@ padding: 0 20%;
   align-items: flex-start;
   gap: 16px;
 }
+
 .img-recipe {
   width: 100%;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
 }
+
 .labels {
   margin: 0 0 50px 0;
   display: flex;
@@ -267,6 +272,7 @@ padding: 0 20%;
   align-items: center;
   gap: 32px;
 }
+
 .lable {
   min-width: fit-content;
   background-color: var(--box-shadow);
@@ -277,50 +283,59 @@ padding: 0 20%;
   justify-content: center;
   align-items: center;
 }
+
 .lable img {
   width: 1em;
   height: 1em;
 }
+
 /* <<<<<<<<<<<<<< Input, Button>>>>>>>>>>>>>>>>>> */
 .portion {
-    margin: 8px 0;
+  margin: 8px 0;
   gap: 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .recipe-portion {
   width: 20rem;
   height: 30px;
   display: flex;
   align-items: center;
 }
+
 .recipe-portion input {
   width: 50%;
   height: 28px;
   border: 1px solid var(--box-shadow);
   border-radius: 5px 0 0 5px;
 }
+
 .recipe-portion button {
   height: 100%;
   width: 50%;
   margin: 0;
 }
+
 /* <<<<<<<<<<<<<<<<< Table >>>>>>>>>>>>>>>>>>>> */
 table {
-    margin-bottom: 25px;
-    width: 100%;
-    border-collapse: collapse;
+  margin-bottom: 25px;
+  width: 100%;
+  border-collapse: collapse;
 }
+
 /* table tr{
     background-color: #f2f2f2;
 } */
 tbody:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 table tr:hover {
   background-color: #ddd;
 }
+
 table th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -328,44 +343,107 @@ table th {
   background-color: #04aa6d;
   color: white;
 }
-.td-number{
+
+.td-number {
   width: 50px;
   padding: 8px 8px 8px 0px;
   text-align: right;
   border-radius: 5px 0 0 5px;
 }
-.td-unit{
+
+.td-unit {
   width: 100px;
   min-width: max-content;
   padding: 8px 0px 8px 0px;
   text-align: left;
 }
-.td-ingredient{
+
+.td-ingredient {
   padding: 8px 0px 8px 0px;
   text-align: start;
   border-radius: 0 5px 5px 0;
 }
+
 /* <<<<<<<<<<< Preperation >>>>>>>>>>>>>> */
-.preperation .labels{
-    margin: 16px 0;
+.preperation .labels {
+  margin: 16px 0;
 }
-.recipe-creator{
-    margin-top: 16px;
+
+.recipe-creator {
+  margin-top: 16px;
 }
-.creator{
-    margin: 16px 0 0 0;
-    height: 64px;
+
+.creator {
+  margin: 16px 0 0 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.creator img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.creator p {
+  font-size: 16px;
+}
+
+@media screen and (max-width:768px) {
+  .section-two-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .section-three-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .header-navbar img {
+    height: 50px;
+  }
+
+  .img-big {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .header-headline {
     display: flex;
     align-items: center;
-    gap: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width:565px) {
+
+    /* section header */
+    .header-navbar {
+      height: 100px;
+      background-color: var(--background-bright);
+      /* position: absolute; */
+      /* top: 0; */
+      /* right: 0; */
+      /* left: 0; */
+      padding: 0px 64px 0px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 5px 3px var(--box-shadow);
+    }
+  }
 }
-.creator img{
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.creator p{
-    font-size: 16px;
-} 
