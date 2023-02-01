@@ -31,13 +31,16 @@ function renderRecipe(){//onload recipe.html
 function renderTable(){
     let i = localStorage.getItem('recipeNumber', '${i}');
     let table = document.getElementById("table-ingredient");
-    table.innerHTML = '';// delete Table
     let currentlyPortion = document.getElementById('input-portion').value;//portion quantity    
     let recipe = recipes[i];
+
+    table.innerHTML = '';// delete Table
+
     for(a = 0 ; a < recipe["ingredient"].length ; a++){//search Array
         let ingredient = recipe["ingredient"][a];
         let unit = recipe["unit"][a];
         let quantity = recipe["quantity"][a];
+        
         // create Table
         table.innerHTML += /*html*/`
     <tr>
