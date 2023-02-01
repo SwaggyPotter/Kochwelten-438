@@ -10,6 +10,8 @@ function addrecipe(i){//load recipe with param
     window.open(`recipe.html`,'_blank');//open new page
     localStorage.setItem('recipeNumber',`${i}`);//save 'key' , 'param local'
 }
+
+
 function renderRecipe(){//onload recipe.html
     let i = localStorage.getItem('recipeNumber', '${i}');//load localStorage(addrecipe(param))
     let recipe = recipes[i];//load JSON
@@ -28,6 +30,8 @@ function renderRecipe(){//onload recipe.html
 
     renderTable();
 }
+
+
 function renderTable(){
     let i = localStorage.getItem('recipeNumber', '${i}');
     let table = document.getElementById("table-ingredient");
