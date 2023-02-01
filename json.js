@@ -15,7 +15,6 @@ let recipes = [
         // table quantity for 1 person
         "portion" : 4,
         "quantity" : ['50', '50', '50', '50', '1.25','1','37.5','1.25','0.25','0.25','0.25','0.75','','',''],
-        "unit" : ['g','g','g','g','Anzahl','Anzahl','g','Anzahl','EL','Anzahl','TL','Zehen','',''],
         "unit" : ['g','g','g','g','Anzahl','Anzahl','g','Anzahl','EL','Anzahl','TL','Zehen','','',''],
         "ingredient" : ['Salami','Jagdwurst','Geflügelwurst','Schinkenspeck, gewürfelt','Zwiebel(n)',`Paprikaschote(n)`,'Tomatenmark','Gewürzgurke(n)','Sambal Olek','Lorbeerblatt','Senf','Knoblauch','Gurkensud','Brühe, fette','saure Sahne'],
         "preparation" : `Den Speck anbraten, die gewürfelte Wurst dazugeben (noch nicht die Salami!) und alles schön anbraten. Dann die Salami dazugeben. Kurz weiterbraten, die Zwiebel mit in den Topf geben und weiterbraten, bis die Zwiebeln glasig sind. Falls es ansetzen sollte, ein wenig Wasser dazugeben.<br>
