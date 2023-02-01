@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,77 @@
     <script src="https://kit.fontawesome.com/aa0c350945.js" crossorigin="anonymous"></script>
     <title>Contact Form</title>
 </head>
-<body>
 
+<body>
+    <header class="header">
+        <!-- todo font-family -->
+        <div class="header-navbar">
+            <a href="index.html">
+                <img id="logo" src="img/logo.png" alt="Logo-Kochwelt" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Rezept des Tages</a></li>
+                    <li><a href="contact\contact.html">Kontakte</a></li>
+                    <li><a href="footer_links/Impressum.html">Impressum</a></li>
+                    <!-- * other languages -->
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <div class="contact-img">
         <img src="pexels-ella-olsson-1640772 1.png">
 
-    
-    <div class="hero">
 
-        <form>
-            <div class="input-group">
-                <input type="text" id="name" required>
-                <label for="name"><i class="fa-solid fa-user"></i>  Your Name </label>
-            </div>
-            <div class="input-group">
-                <input type="text" id="number" required>
-                <label for="number"><i class="fa-solid fa-phone"></i>  Telephone no.</label>
-            </div>
-            <div class="input-group">
-                <input type="email" id="email" required>
-                <label for="email"><i class="fa-solid fa-envelope"></i>  Your Email</label>
-            </div>
-            <div class="input-group">
-                <textarea  id="message" rows="8" required></textarea>
-                <label for="message"><i class="fa-solid fa-message"></i>   Your Message </label>
-            </div>
-            <button type="submit"><i class="fa-solid fa-paper-plane"></i>  SUBMIT</button>
-        </form>
+        <div class="hero">
 
+            <form>
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user"></i> Your Name </label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-phone"></i> Telephone no.</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fa-solid fa-message"></i> Your Message </label>
+                </div>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i> SUBMIT</button>
+            </form>
+
+        </div>
     </div>
-</div>
-    
+
+
+    <footer>
+        <div>
+            <img class="socialMediaIconStyle" src="img/logo.png" alt="">
+            <h3><a href="footer_links/Impressum.html">Impressum</a></h3>
+            <h3><a href="footer_links/AGB.html">AGB</a></h3>
+            <h3><a href="footer_links/datenschutz.html">Datenschutz</a></h3>
+        </div>
+        <div>
+            <a href="https://de-de.facebook.com/"><img class="socialMediaIconStyle"
+                    src="footer_links/footer-IMG/facebook_hex_icon.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="socialMediaIconStyle"
+                    src="footer_links/footer-IMG/instagram_hex_icon.png" alt="instagram icon"></a>
+            <a href="https://www.pinterest.de/"><img class="socialMediaIconStyle"
+                    src="footer_links/footer-IMG/pintrest_hex_icon.png" alt="printerest icon"></a>
+            <a href="https://www.tumblr.com/"><img class="socialMediaIconStyle"
+                    src="footer_links/footer-IMG/tumblr_hex_icon.png" alt="tublr icon"></a>
+            <a href="https://twitter.com/"><img class="socialMediaIconStyle"
+                    src="footer_links/footer-IMG/twitter_hex_icon.png" alt="twitter icon"></a>
+        </div>
+    </footer>
+
 </body>
+
 </html>
