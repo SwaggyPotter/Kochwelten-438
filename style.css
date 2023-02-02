@@ -314,6 +314,7 @@ footer a {
   height: 28px;
   border: 1px solid var(--box-shadow);
   border-radius: 5px 0 0 5px;
+  text-align: center;
 }
 
 .recipe-portion button {
