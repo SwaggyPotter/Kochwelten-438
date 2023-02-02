@@ -1,154 +1,105 @@
-/* <<<<<<< HEAD */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
   /* set html, body, every element */
   margin: 0;
   padding: 0;
 }
-
 :root {
   /* set global Variable */
-  --text-color-dark: black;
-  --background-bright: white;
-
+  --black: black;
+  --white: white;
+  
+  --background-color-two: #ecebeb;
+  --background-color-footer: rgba(128, 128, 128, 0.5);
   --box-shadow: rgba(0, 0, 0, 0.2);
-  --hover-color: green;
-
+  --button: #268029;
+  
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
 
-  --primary: #0c0c0c;
-  --secondary: #190e08;
-  --button: #268029;
-  --background-color-two: #ecebeb;
+  --img-border-radius: 20px;
+  --height100: 100%;
+  --padding: 30px 20%;
 }
-
-body {
-  margin: 0;
-}
-
-/* section header */
+/* <<<<<<< header */
 .header-navbar {
   height: 100px;
-  background-color: var(--background-bright);
-  /* position: absolute; */
-  /* top: 0; */
-  /* right: 0; */
-  /* left: 0; */
+  background-color: var(--white);
   padding: 0px 64px 0px 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 5px 3px var(--box-shadow);
 }
-
 .header-navbar img {
   height: 80px;
 }
-
 nav {
-  height: 100%;
+  height: var(--height100);
 }
-
 nav ul {
-  height: 100%;
+  height: var(--height100);
   gap: 16px;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-
 nav ul li {
-  height: 25px;
-  /*distance to box-shadow for underline*/
+  height: 20px;/*distance to box-shadow for underline*/
   text-align: center;
 }
-
 nav ul li a {
-  color: var(--text-color-dark);
-  font-family: var(--font-family);
+  color: var(--black);
   text-decoration: none;
   font-weight: bold;
   transition: 200ms ease-in-out;
   position: relative;
 }
-
 nav ul li a:hover {
-  color: var(--hover-color);
+  color: var(--button);
   font-weight: bold;
 }
-
-/* test */
 nav ul li a::after {
   content: "";
   height: 5px;
   width: 0%;
-  background: var(--hover-color);
+  background: var(--button);
   position: absolute;
   bottom: -8px;
   left: 0;
   transition: 250ms ease-in-out;
 }
-
 nav ul li a:hover::after {
-  width: 100%;
+  width: var(--height100);
 }
-
-/* ======= */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-
-:root {
-  --font-size: 62.5%;
-  --font-family: "Raleway", sans-serif;
-
-  --primary: #0c0c0c;
-  --secondary: #190e08;
-  --button: #268029;
-  --background-color-two: #ecebeb;
-}
-
-body {
-  margin: 0;
-}
-
-.headline-first {
-  padding: 30px;
+/* ======= Index*/
+/* <<<<<<<Section1 */
+.section-one{
+  padding: var(--padding);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 }
-
-.img-big {
-  display: flex;
-  justify-content: center;
-}
-
 .img-big-croissant {
   width: 36rem;
   height: 23rem;
-  border-radius: 2%;
+  border-radius: var(--img-border-radius);
 }
-
-.header-big-img {
-  color: var(--primary);
-  font-size: 2rem;
-  margin: 0;
-}
-
-.headline-big-img {
-  color: var(--secondary);
-  font-size: 1.2rem;
-  padding-bottom: 0;
-  padding-top: 0;
-}
-
 .header-headline {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 4rem;
 }
-
+.header-headline h2{
+  color: var(--black);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.headline-big-img {
+  color: var(--black);
+  font-size: 1.2rem;
+}
 .open-recipe {
   background-color: var(--button);
   border: none;
@@ -156,70 +107,53 @@ body {
   height: 3rem;
   color: white;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
-
-.section-two {
+.open-recipe:hover{
+  box-shadow: 1px 1px 3px rgb(255, 255, 255) inset, 1px 1px 3px black ;
+}
+.open-recipe:active{
+  box-shadow: -1px -1px 3px rgb(255, 255, 255) inset, 1px 1px 3px black inset;
+}
+/* <<<<<<<<<<< Section 2 */
+.section-two-container {
+  text-align: center;
+  padding: var(--padding);
   background-color: var(--background-color-two);
 }
-
-.section-two-header {
-  text-align: center;
-  padding: 30px;
+.section-two-container h2 {
+  padding-bottom: 2.3rem;
 }
-
-.section-two-header h2 {
-  padding: 2.3rem;
-}
-
-.section-two-image-container {
+.section-two-cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-
-.section-two-image {
-  margin-bottom: 3rem;
-}
-
-.section-two-image img {
+.img-lable {
   width: 14rem;
   height: 14rem;
-  border-radius: 3%;
+  border-radius: var(--img-border-radius);
   object-fit: cover;
-  display: flex;
 }
-
-.section-two-image p {
+.section-two-card p {
   text-align: center;
-  margin: 0;
+  margin-top: 16px;
   font-weight: bold;
 }
-
-.section-three-header {
-  text-align: center;
-}
-
+/* <<<<<<<<<< Section 3 */
 .section-three {
-  padding: 30px;
+  padding: var(--padding);
 }
-
-.section-three-image img {
-  height: 10rem;
-  width: 12rem;
-  object-fit: cover;
-  border-radius: 3%;
+.section-three h2{
+  text-align: center;
+  padding-bottom: 2.3rem;
 }
-
-.section-three-image {
+.section-three-container {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
   gap: 4rem;
 }
-
-/* >>>>>>> e684bea119edd3a5b55a18e1a8c1b87ebdea0f1d */
-
-/* >>>>>>> footer section*/
-
+/* >>>>>>> footer*/
 footer {
   bottom: 0;
   left: 0;
@@ -227,26 +161,23 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: var(--background-color-footer);
   padding: 20px;
+  position: relative;
 }
-
 footer h3 {
   padding: 5px;
 }
-
 footer a {
   text-decoration: none;
   color: white;
 }
-
 .socialMediaIconStyle {
   width: 80px;
 }
-
 /* <<<<<<<<<<<<<<<<<<<<< Recipes >>>>>>>>>>>>>>>>>>>>>>*/
 .recipe-head {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .padding {
@@ -265,7 +196,7 @@ footer a {
 .img-recipe {
   width: 100%;
   height: 300px;
-  border-radius: 10px;
+  border-radius: var(--img-border-radius);
   object-fit: cover;
 }
 
@@ -282,7 +213,7 @@ footer a {
   background-color: var(--box-shadow);
   gap: 8px;
   padding: 8px;
-  border-radius: 5px;
+  border-radius: var(--img-border-radius);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +244,7 @@ footer a {
   width: 50%;
   height: 28px;
   border: 1px solid var(--box-shadow);
-  border-radius: 5px 0 0 5px;
+  border-radius: var(--img-border-radius) 0 0 var(--img-border-radius);
   text-align: center;
 }
 
@@ -353,7 +284,7 @@ table th {
   width: 50px;
   padding: 8px 8px 8px 0px;
   text-align: right;
-  border-radius: 5px 0 0 5px;
+  border-radius: var(--img-border-radius) 0 0 var(--img-border-radius);
 }
 
 .td-unit {
@@ -366,7 +297,7 @@ table th {
 .td-ingredient {
   padding: 8px 0px 8px 0px;
   text-align: start;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 var(--img-border-radius) var(--img-border-radius) 0;
 }
 
 /* <<<<<<<<<<< Preperation >>>>>>>>>>>>>> */
@@ -379,7 +310,7 @@ table th {
 }
 
 .creator {
-  margin: 16px 0 0 0;
+  margin: 16px 0 30px 0;
   height: 64px;
   display: flex;
   align-items: center;
@@ -399,7 +330,7 @@ table th {
 }
 
 @media screen and (max-width:768px) {
-  .section-two-image-container {
+  .section-two-cards {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -418,11 +349,13 @@ table th {
     height: 50px;
   }
 
-  .img-big {
+  .section-one {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     margin-top: 0;
+    text-align: center;
   }
 
   .header-headline {
@@ -433,7 +366,7 @@ table th {
     margin-left: 0;
   }
 
-  .section-three-header {
+  .section-three h2 {
     text-align: center;
     margin-bottom: 40px;
   }
@@ -453,7 +386,7 @@ table th {
   /* section header */
   .header-navbar {
     height: 100px;
-    background-color: var(--background-bright);
+    background-color: var(--white);
     /* position: absolute; */
     /* top: 0; */
     /* right: 0; */
@@ -491,15 +424,8 @@ table th {
   .img-big-croissant {
     width: 230px;
     height: 160px;
-    border-radius: 2%;
+    border-radius: var(--img-border-radius);
   }
-
-  .img-big {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .header-headline {
     display: flex;
     flex-direction: column;
@@ -510,7 +436,7 @@ table th {
 
   .header-navbar {
     height: 100px;
-    background-color: var(--background-bright);
+    background-color: var(--white);
     /* position: absolute; */
     /* top: 0; */
     /* right: 0; */

@@ -18,7 +18,6 @@
 
 <body onload="render()">
   <header class="header">
-    <!-- todo font-family -->
     <div class="header-navbar">
       <a href="index.html">
         <img id="logo" src="img/logo.png" alt="Logo-Kochwelt" />
@@ -35,40 +34,39 @@
     </div>
   </header>
 
-  <section class="headline-first">
-    <div class="img-big">
+  <section class="section-one">
+    <!-- <div class="img-big"> -->
       <a href="#"> <img class="img-big-croissant" src="img\croissant.jpg" /> </a>
 
       <div class="header-headline">
         <div class="header-headline-child">
-          <h2 class="header-big-img">Französische Croissants</h2>
+          <h2>Französische Croissants</h2>
           <p class="headline-big-img">
             Schmackhafte Croissants können auch zu hause sehr einfach gebacken
-            <br />
-            werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles <br />
+            werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
             Frühstück zaubern.
           </p>
         </div>
         <button class="open-recipe">Rezept Öffnen</button>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <section class="section-two">
-    <div class="section-two-header">
+    <div class="section-two-container">
       <h2>Lust auf was neues?</h2>
 
-      <div class="section-two-image-container">
-        <div class="section-two-image">
-          <a href="#" onclick="addrecipe(0)"><img src="img\croissant.jpg" alt="" /></a>
+      <div class="section-two-cards">
+        <div class="section-two-card">
+          <a href="#" onclick="addrecipe(0)"><img class="img-lable" src="img\croissant.jpg" alt="" /></a>
           <p>Frische Croissants</p>
         </div>
-        <div class="section-two-image">
-          <a href="#" onclick="addrecipe(1)"><img src="img\croissant.jpg" alt="" /></a>
+        <div class="section-two-card">
+          <a href="#" onclick="addrecipe(1)"><img class="img-lable" src="img\croissant.jpg" alt="" /></a>
           <p>Frische Croissants</p>
         </div>
-        <div class="section-two-image">
-          <a href="#" onclick="addrecipe(3)"><img src="img\croissant.jpg" alt="" /></a>
+        <div class="section-two-card">
+          <a href="#" onclick="addrecipe(3)"><img class="img-lable" src="img\croissant.jpg" alt="" /></a>
           <p>Frische Croissants</p>
         </div>
       </div>
@@ -81,18 +79,18 @@
         Pfanne vs. Wok - Was ist besser?
       </h2>
     </div>
-    <div class="section-three-image">
-      <img src="img\wok.jpg">
+    <div class="section-three-container">
+      <img class="img-lable" src="img\wok.jpg">
 
-      <p class="section-three-subhead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laboriosam
-        nobis ipsa doloremque<br> voluptatum totam consectetur veritatis repudiandae. Aut, hic. Cupiditate impedit
-        consectetur sit vero?<br> Dolorum, mollitia! Ipsum, alias corporis?</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laboriosam
+        nobis ipsa doloremque voluptatum totam consectetur veritatis repudiandae. Aut, hic. Cupiditate impedit
+        consectetur sit vero? Dolorum, mollitia! Ipsum, alias corporis?</p>
     </div>
   </section>
 
   <footer>
     <div>
-      <img class="socialMediaIconStyle" src="img/logo.png" alt="">
+      <a href="index.html"><img class="socialMediaIconStyle" src="img/logo.png" alt=""></a>
       <h3><a href="footer_links/Impressum.html">Impressum</a></h3>
       <h3><a href="footer_links/AGB.html">AGB</a></h3>
       <h3><a href="footer_links/datenschutz.html">Datenschutz</a></h3>
