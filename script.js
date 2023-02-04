@@ -28,6 +28,9 @@ function randomRecipe(){
     document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
     <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept des Tages</a>
     `;
+    // document.getElementById('linkDailyRecipe-fromRecipe').innerHTML = /*html*/`
+    //  <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept des Tages</a>
+    // `;
 }
 
 
