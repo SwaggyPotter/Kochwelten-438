@@ -6,9 +6,10 @@ function render(){
 
 
 function randomRecipe(){
-    const num = Math.floor(Math.random()*recipes.length)
-    let recipe = recipes[num]
+    const num = Math.floor(Math.random()*recipes.length);
+    let recipe = recipes[num];
 
+    document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
     <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
         <img class="img-big-croissant" src="${recipe["img"]}" />
@@ -23,6 +24,9 @@ function randomRecipe(){
         </div>
         <button class="open-recipe" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
     </div>
+    `;
+    document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
+    <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept des Tages</a>
     `;
 }
 
