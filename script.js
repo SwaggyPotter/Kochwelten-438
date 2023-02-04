@@ -1,15 +1,26 @@
 // >>Load localStorage for Rendering startPage
-// function render(){
-//     for( let i = 0 ; i < recipes.length, i++;){
-//         const recipe = recipes[i]; //with localStorage.setItem('recipeNumber',`${i}`) save all JSON´s
-//     }
-//     localStorage.setItem('recipeNumber',`${i}`);
-// }
-// >>open RecipeSite
-function addrecipe(i){//load recipe with param
-    window.open(`recipe.html`,'_blank');//open new page
-    localStorage.setItem('recipeNumber',`${i}`);//save 'key' , 'param local'
+function render(){
+    let sectionTwo = document.getElementById('section-two-cards');
+    sectionTwo.innerHTML = '';
+
+    for( let i = 0 ; i < recipes.length; i++){
+        const recipe = recipes[i]; //with localStorage.setItem('recipeNumber',`${i}`) save all JSON´s
+
+        sectionTwo.innerHTML += /*html*/`
+        <a href="#">
+    <div class="section-two-card" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${i}')">
+            <img class="img-lable" src="${recipe["img"]}" alt="" />
+            <p>${recipe["name"]}</p>
+    </div>
+    </a>
+    `;
+    }
 }
+// >>open RecipeSite
+// function addrecipe(i){  //load recipe with param
+    // window.open(`recipe.html`,'_blank');    //open new page
+    // localStorage.setItem('recipeNumber',`${i}`);     //save 'key' , 'param local'
+// }
 
 
 function renderRecipe(){//onload recipe.html
@@ -22,8 +33,8 @@ function renderRecipe(){//onload recipe.html
     document.getElementById(`recipe-card-brain`).innerHTML = `${recipe["difficulty"]}`;
     document.getElementById(`recipe-card-calender`).innerHTML = ` ${recipe["calender"]}`;
     document.getElementById(`preperation-recipe`).innerHTML = ` ${recipe["preparation"]}`;
-    document.getElementById(`lablePreperationClock`).innerHTML = `ca. ${recipe["time"]}`;
-    document.getElementById(`lableLengthOfTime`).innerHTML = `Gesamtzeit ca. ${recipe["time"]}`;
+    document.getElementById(`lablePreperationClock`).innerHTML = `Arbeitszeit ca. ${recipe["lablePreperationClock"]}`;
+    document.getElementById(`lableLengthOfTime`).innerHTML = `Gesamtzeit ca. ${recipe["lableLengthOfTime"]}`;
     document.getElementById(`input-portion`).innerHTML = `${recipe["portion"]}`;
     document.getElementById(`img-creator`).src = `${recipe["profilPic"]}`;
     document.getElementById(`name-creator`).innerHTML = `${recipe["creator"]}`;

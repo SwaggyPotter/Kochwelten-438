@@ -124,9 +124,14 @@ nav ul li a:hover::after {
 .section-two-container h2 {
   padding-bottom: 2.3rem;
 }
-.section-two-cards {
+#section-two-cards {
   display: flex;
   justify-content: space-between;
+  overflow-x: scroll;
+}
+#section-two-cards a{
+  color: var(--black);
+  text-decoration: none;
 }
 .img-lable {
   width: 14rem;
