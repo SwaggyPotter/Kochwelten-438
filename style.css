@@ -75,7 +75,7 @@ nav ul li a:hover::after {
 }
 /* ======= Index*/
 /* <<<<<<<Section1 */
-.section-one{
+#section-one{
   padding: var(--padding);
   display: flex;
   justify-content: flex-start;
@@ -84,6 +84,7 @@ nav ul li a:hover::after {
   width: 36rem;
   height: 23rem;
   border-radius: var(--img-border-radius);
+  object-fit: cover;
 }
 .header-headline {
   display: flex;
@@ -335,7 +336,7 @@ table th {
 }
 
 @media screen and (max-width:768px) {
-  .section-two-cards {
+  #section-two-cards {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -354,7 +355,7 @@ table th {
     height: 50px;
   }
 
-  .section-one {
+  #section-one {
     display: flex;
     justify-content: center;
     flex-direction: column;

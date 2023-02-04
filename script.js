@@ -1,5 +1,33 @@
 // >>Load localStorage for Rendering startPage
 function render(){
+    randomRecipe();
+    sectionTwo();
+}
+
+
+function randomRecipe(){
+    const num = Math.floor(Math.random()*recipes.length)
+    let recipe = recipes[num]
+
+    document.getElementById('section-one').innerHTML = /*html*/`
+    <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
+        <img class="img-big-croissant" src="${recipe["img"]}" />
+    </a>
+
+    <div class="header-headline">
+        <div class="header-headline-child">
+            <h2>${recipe["name"]}</h2>
+            <p class="headline-big-img">
+            ${recipe["dailyText"]}
+            </p>
+        </div>
+        <button class="open-recipe" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
+    </div>
+    `;
+}
+
+
+function sectionTwo(){
     let sectionTwo = document.getElementById('section-two-cards');
     sectionTwo.innerHTML = '';
 
@@ -14,13 +42,8 @@ function render(){
     </div>
     </a>
     `;
-    }
+    };
 }
-// >>open RecipeSite
-// function addrecipe(i){  //load recipe with param
-    // window.open(`recipe.html`,'_blank');    //open new page
-    // localStorage.setItem('recipeNumber',`${i}`);     //save 'key' , 'param local'
-// }
 
 
 function renderRecipe(){//onload recipe.html
