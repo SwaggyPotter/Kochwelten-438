@@ -29,6 +29,7 @@ let recipes = [
         "creator" : "Mathias Kohler",
         "lablePreperationClock" : "1 Stunde 15 Minuten",
         "lableLengthOfTime" : "1 Stunde 15 Minuten",
+        "dailyText" :  `Soljanka ist eine säuerliche-scharfe-Suppe aus der osteuropäischen Küche, die ausgezeichnet zu kalten Tagen passt. Als Basis kann man sich zwischen Fleisch, Fisch oder Pilz entscheiden.`,
     },
     {
         "name" : "Hähnchenschenkel auf Reis",
@@ -46,5 +47,6 @@ let recipes = [
         "creator" : "Mathias Kohler",
         "lablePreperationClock" : "15 Minuten",
         "lableLengthOfTime" : "1 Stunde 25 Minuten",
+        "dailyText" :  `Mit wenig Arbeitsaufwand kannst du dir ein herzhaftes Essen zaubern. Die meiste Arbeit übernimmt für dich dein Ofen. Somit kannst du dich nebenher um andere Sachen kümmern.`,
     },
     ]
