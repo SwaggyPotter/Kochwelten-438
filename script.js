@@ -104,11 +104,9 @@ function renderTable() {
 
 menu.addEventListener('click', () => {
     nav.style.display = 'flex';
-    console.log('click')
 })
 navCloseBTN.addEventListener('click', () => {
     nav.style.display = 'none';
-    console.log('Click')
 })
 addEventListener('resize', () => {
     if (window.innerWidth > 768) {
