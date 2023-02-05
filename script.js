@@ -1,6 +1,8 @@
 let menu = document.getElementById('menu')
 let navCloseBTN = document.getElementById('closeMenu')
 let nav = document.getElementById('nav')
+
+
 // >>Load localStorage for Rendering startPage
 function render() {
     randomRecipe();
@@ -100,8 +102,8 @@ function renderTable() {
     }
 }
 
-/*Menu button*/ 
 
+/*Menu button*/ 
 menu.addEventListener('click', () => {
     nav.style.display = 'flex';
     console.log('click')
