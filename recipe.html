@@ -14,11 +14,12 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <script src="json.js"></script>
   </head>
-  <body onload="renderRecipe()">
-    <header class="header">
-      <!-- todo font-family -->
+  <body onload="renderRecipe(); includeHTML()">
+
+    <!-- <header class="header">
       <div class="header-navbar">
         <a href="index.html">
           <img src="img/logo.png" alt="Logo-Kochwelt" />
@@ -29,11 +30,11 @@
             <li id="linkDailyRecipe"><a href="#">Rezept des Tages</a></li>
             <li><a href="contact/contact.html">Kontakte</a></li>
             <li><a href="footer_links/Impressum.html">Impressum</a></li>
-            <!-- * other languages -->
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
+    <header w3-include-html="templates\header.html" class="header"></header>
 
       <section class="recipe-head padding">
       <div class="recipe-header">
@@ -122,7 +123,7 @@
         </div>
       </section>
 
-    <footer>
+    <!-- <footer>
       <div>
         <img
           class="socialMediaIconStyle"
@@ -165,7 +166,9 @@
             alt="twitter icon"
         /></a>
       </div>
-    </footer>
-    <script src="script.js"></script>
+    </footer> -->
+
+    <footer w3-include-html="templates\footer.html"></footer>
+
   </body>
 </html>
