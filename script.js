@@ -1,11 +1,13 @@
-let menu = document.getElementById('menu')
-let navCloseBTN = document.getElementById('closeMenu')
-let nav = document.getElementById('nav')
+
 // >>Load localStorage for Rendering startPage
 function render() {
-    randomRecipe();
-    sectionTwo();
+    includeHTML();
+    setTimeout(() => {
+        randomRecipe();
+        sectionTwo();
+    }, 200)
 }
+
 
 
 function randomRecipe() {
@@ -100,15 +102,23 @@ function renderTable() {
     }
 }
 
-/*Menu button*/ 
+/*Menu button*/
 
-menu.addEventListener('click', () => {
+function openMenu() {
+    getDiviceSize();
+    
+    let nav = document.getElementById('nav')
     nav.style.display = 'flex';
-})
-navCloseBTN.addEventListener('click', () => {
+}
+function closeMenu() {
+    let nav = document.getElementById('nav')
     nav.style.display = 'none';
-})
+}
 addEventListener('resize', () => {
+    let navCloseBTN = document.getElementById('closeMenu')
+    let nav = document.getElementById('nav')
+
+
     if (window.innerWidth > 768) {
         nav.classList.remove('handyNav');
         nav.classList.add('desktopNav');
@@ -122,8 +132,11 @@ addEventListener('resize', () => {
         nav.style.display = 'none';
     }
 })
-function getDiviceSize(){
-    if(window.innerWidth > 768){
+function getDiviceSize() {
+    let nav = document.getElementById('nav')
+    let navCloseBTN = document.getElementById('closeMenu')
+
+    if (window.innerWidth > 768) {
         nav.classList.remove('handyNav');
         nav.classList.add('desktopNav');
         navCloseBTN.style.display = 'none';
@@ -136,4 +149,33 @@ function getDiviceSize(){
         nav.style.display = 'none';
     }
 }
-getDiviceSize();
+
+
+/*include header template*/
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                    if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+        }
+    }
+}
