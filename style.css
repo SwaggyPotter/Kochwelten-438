@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
 * {
   /* set html, body, every element */
   margin: 0;
   padding: 0;
 }
+
 :root {
   /* set global Variable */
   --black: black;
   --white: white;
-  
+
   --background-color-two: #ecebeb;
   --background-color-footer: rgba(128, 128, 128, 0.5);
   --box-shadow: rgba(0, 0, 0, 0.2);
   --button: #268029;
-  
+
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
 
@@ -21,6 +23,7 @@
   --height100: 100%;
   --padding: 30px 20%;
 }
+
 /* <<<<<<< header */
 .header-navbar {
   height: 100px;
@@ -34,9 +37,45 @@
 .header-navbar img {
   height: 80px;
 }
-nav {
+/*Hamburger Menu*/
+#menu {
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+#closeMenu{
+  cursor: pointer;
+  display: none;
+  padding: 5px 8px;
+  background-color: red;
+  width: 5px;
+  border-radius: 100%;
+  z-index: 3;
+}
+.desktopNav {
+  position: inherit;
   height: var(--height100);
 }
+.handyNav  {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  background-color: #04aa6d;
+  padding: 50px;
+}
+.handyNav ul {
+  display: flex;
+  flex-direction: column;
+}
+/*Hamburger Menu*/
+
+
+/*nav {
+  height: var(--height100);
+}*/
 nav ul {
   height: var(--height100);
   gap: 16px;
@@ -45,10 +84,13 @@ nav ul {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 nav ul li {
-  height: 20px;/*distance to box-shadow for underline*/
+  height: 20px;
+  /*distance to box-shadow for underline*/
   text-align: center;
 }
+
 nav ul li a {
   color: var(--black);
   text-decoration: none;
@@ -56,10 +98,12 @@ nav ul li a {
   transition: 200ms ease-in-out;
   position: relative;
 }
+
 nav ul li a:hover {
   color: var(--button);
   font-weight: bold;
 }
+
 nav ul li a::after {
   content: "";
   height: 5px;
@@ -70,37 +114,44 @@ nav ul li a::after {
   left: 0;
   transition: 250ms ease-in-out;
 }
+
 nav ul li a:hover::after {
   width: var(--height100);
 }
+
 /* ======= Index*/
 /* <<<<<<<Section1 */
-#section-one{
+#section-one {
   padding: var(--padding);
   display: flex;
   justify-content: flex-start;
 }
+
 .img-big-croissant {
   width: 36rem;
   height: 23rem;
   border-radius: var(--img-border-radius);
   object-fit: cover;
 }
+
 .header-headline {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 4rem;
 }
-.header-headline h2{
+
+.header-headline h2 {
   color: var(--black);
   font-size: 2rem;
   margin-bottom: 10px;
 }
+
 .headline-big-img {
   color: var(--black);
   font-size: 1.2rem;
 }
+
 .open-recipe {
   background-color: var(--button);
   border: none;
@@ -110,55 +161,67 @@ nav ul li a:hover::after {
   margin-bottom: 3rem;
   cursor: pointer;
 }
-.open-recipe:hover{
-  box-shadow: 1px 1px 3px rgb(255, 255, 255) inset, 1px 1px 3px black ;
+
+.open-recipe:hover {
+  box-shadow: 1px 1px 3px rgb(255, 255, 255) inset, 1px 1px 3px black;
 }
-.open-recipe:active{
+
+.open-recipe:active {
   box-shadow: -1px -1px 3px rgb(255, 255, 255) inset, 1px 1px 3px black inset;
 }
+
 /* <<<<<<<<<<< Section 2 */
 .section-two-container {
   text-align: center;
   padding: var(--padding);
   background-color: var(--background-color-two);
 }
+
 .section-two-container h2 {
   padding-bottom: 2.3rem;
 }
+
 #section-two-cards {
   display: flex;
   justify-content: space-between;
   overflow-x: scroll;
 }
-#section-two-cards a{
+
+#section-two-cards a {
   color: var(--black);
   text-decoration: none;
 }
+
 .img-lable {
   width: 14rem;
   height: 14rem;
   border-radius: var(--img-border-radius);
   object-fit: cover;
 }
+
 .section-two-card p {
   text-align: center;
   margin-top: 16px;
   font-weight: bold;
 }
+
 /* <<<<<<<<<< Section 3 */
 .section-three {
   padding: var(--padding);
 }
-.section-three h2{
+
+.section-three h2 {
   text-align: center;
   padding-bottom: 2.3rem;
 }
+
 .section-three-container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   gap: 4rem;
 }
+
 /* >>>>>>> footer*/
 footer {
   bottom: 0;
@@ -171,16 +234,20 @@ footer {
   padding: 20px;
   position: relative;
 }
+
 footer h3 {
   padding: 5px;
 }
+
 footer a {
   text-decoration: none;
   color: white;
 }
+
 .socialMediaIconStyle {
   width: 80px;
 }
+
 /* <<<<<<<<<<<<<<<<<<<<< Recipes >>>>>>>>>>>>>>>>>>>>>>*/
 .recipe-head {
   margin-top: 30px;
@@ -336,6 +403,14 @@ table th {
 }
 
 @media screen and (max-width:768px) {
+  #menu {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
+
   #section-two-cards {
     display: flex;
     flex-direction: column;
@@ -399,8 +474,6 @@ table th {
     /* left: 0; */
     padding: 0px 64px 0px 64px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 3px var(--box-shadow);
   }
@@ -432,6 +505,7 @@ table th {
     height: 160px;
     border-radius: var(--img-border-radius);
   }
+
   .header-headline {
     display: flex;
     flex-direction: column;
@@ -447,9 +521,8 @@ table th {
     /* top: 0; */
     /* right: 0; */
     /* left: 0; */
-    padding: 0;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 3px var(--box-shadow);
   }

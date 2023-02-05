@@ -1,12 +1,15 @@
+let menu = document.getElementById('menu')
+let navCloseBTN = document.getElementById('closeMenu')
+let nav = document.getElementById('nav')
 // >>Load localStorage for Rendering startPage
-function render(){
+function render() {
     randomRecipe();
     sectionTwo();
 }
 
 
-function randomRecipe(){
-    const num = Math.floor(Math.random()*recipes.length);
+function randomRecipe() {
+    const num = Math.floor(Math.random() * recipes.length);
     let recipe = recipes[num];
 
     document.getElementById('section-one').innerHTML = '';
@@ -34,11 +37,11 @@ function randomRecipe(){
 }
 
 
-function sectionTwo(){
+function sectionTwo() {
     let sectionTwo = document.getElementById('section-two-cards');
     sectionTwo.innerHTML = '';
 
-    for( let i = 0 ; i < recipes.length; i++){
+    for (let i = 0; i < recipes.length; i++) {
         const recipe = recipes[i]; //with localStorage.setItem('recipeNumber',`${i}`) save all JSON´s
 
         sectionTwo.innerHTML += /*html*/`
@@ -53,10 +56,10 @@ function sectionTwo(){
 }
 
 
-function renderRecipe(){//onload recipe.html
+function renderRecipe() {//onload recipe.html
     let i = localStorage.getItem('recipeNumber', '${i}');//load localStorage(addrecipe(param))
     let recipe = recipes[i];//load JSON
-    
+
     document.getElementById(`recipe-headline`).innerHTML = `${recipe["name"]}`;//load JSON[Array]
     document.getElementById(`recipe-img`).src = `${recipe["img"]}`;
     document.getElementById(`recipe-card-clock`).innerHTML = `ca. ${recipe["time"]}`;
@@ -73,7 +76,7 @@ function renderRecipe(){//onload recipe.html
 }
 
 
-function renderTable(){
+function renderTable() {
     let i = localStorage.getItem('recipeNumber', '${i}');
     let table = document.getElementById("table-ingredient");
     let currentlyPortion = document.getElementById('input-portion').value;//portion quantity    
@@ -81,11 +84,11 @@ function renderTable(){
 
     table.innerHTML = '';// delete Table
 
-    for(a = 0 ; a < recipe["ingredient"].length ; a++){//search Array
+    for (a = 0; a < recipe["ingredient"].length; a++) {//search Array
         let ingredient = recipe["ingredient"][a];
         let unit = recipe["unit"][a];
         let quantity = recipe["quantity"][a];
-        
+
         // create Table
         table.innerHTML += /*html*/`
     <tr>
@@ -94,5 +97,45 @@ function renderTable(){
         <td class="td-ingredient">${ingredient}</td>
     </tr>
     `;
+    }
 }
+
+/*Menu button*/ 
+
+menu.addEventListener('click', () => {
+    nav.style.display = 'flex';
+    console.log('click')
+})
+navCloseBTN.addEventListener('click', () => {
+    nav.style.display = 'none';
+    console.log('Click')
+})
+addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        nav.classList.remove('handyNav');
+        nav.classList.add('desktopNav');
+        navCloseBTN.style.display = 'none';
+        nav.style.display = 'flex';
+    }
+    else if (window.innerWidth < 768) {
+        nav.classList.remove('desktopNav');
+        nav.classList.add('handyNav');
+        navCloseBTN.style.display = 'flex';
+        nav.style.display = 'none';
+    }
+})
+function getDiviceSize(){
+    if(window.innerWidth > 768){
+        nav.classList.remove('handyNav');
+        nav.classList.add('desktopNav');
+        navCloseBTN.style.display = 'none';
+        nav.style.display = 'flex';
+    }
+    else if (window.innerWidth < 768) {
+        nav.classList.remove('desktopNav');
+        nav.classList.add('handyNav');
+        navCloseBTN.style.display = 'flex';
+        nav.style.display = 'none';
+    }
 }
+getDiviceSize();

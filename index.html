@@ -9,10 +9,11 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/vnd.microsoft.icon" href="img/icons/logo_favcon.ico" />
-
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="style.css" />
   <script src="json.js"></script>
-  <script src="script.js"></script>
+  
 
 </head>
 
@@ -22,33 +23,39 @@
       <a href="index.html">
         <img id="logo" src="img/logo.png" alt="Logo-Kochwelt" />
       </a>
-      <nav>
+      <span id="menu" class="material-symbols-outlined">
+        menu
+      </span>
+      <nav class="desktopNav" id="nav">
+        <p id="closeMenu">X</p>
         <ul>
           <li><a href="#">Start</a></li>
-          <li id="linkDailyRecipe"><a href="#" >Rezept des Tages</a></li>
+          <li id="linkDailyRecipe"><a href="#">Rezept des Tages</a></li>
           <li><a href="contact\contact.html">Kontakte</a></li>
           <li><a href="footer_links/Impressum.html">Impressum</a></li>
           <!-- * other languages -->
         </ul>
       </nav>
     </div>
+
+
   </header>
 
   <section id="section-one">
     <!-- <div class="img-big"> -->
-      <a href="#"> <img class="img-big-croissant" src="img\croissant.jpg" /> </a>
+    <a href="#"> <img class="img-big-croissant" src="img\croissant.jpg" /> </a>
 
-      <div class="header-headline">
-        <div class="header-headline-child">
-          <h2>Französische Croissants</h2>
-          <p class="headline-big-img">
-            Schmackhafte Croissants können auch zu hause sehr einfach gebacken
-            werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
-            Frühstück zaubern.
-          </p>
-        </div>
-        <button class="open-recipe">Rezept Öffnen</button>
+    <div class="header-headline">
+      <div class="header-headline-child">
+        <h2>Französische Croissants</h2>
+        <p class="headline-big-img">
+          Schmackhafte Croissants können auch zu hause sehr einfach gebacken
+          werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
+          Frühstück zaubern.
+        </p>
       </div>
+      <button class="open-recipe">Rezept Öffnen</button>
+    </div>
     <!-- </div> -->
   </section>
 
@@ -59,23 +66,23 @@
       <div id="section-two-cards">
 
         <a href="#" onclick="addrecipe(0)">
-        <div class="section-two-card">
-          <img class="img-lable" src="img\croissant.jpg" alt="" />
-          <p>Frische Croissants</p>
-        </div>
-      </a>
-      <a href="#" onclick="addrecipe(1)">
-        <div class="section-two-card">
-          <img class="img-lable" src="img\croissant.jpg" alt="" />
-          <p>Frische Croissants</p>
-        </div>
-      </a>
-      <a href="#" onclick="addrecipe(3)">
-        <div class="section-two-card">
-          <img class="img-lable" src="img\croissant.jpg" alt="" />
-          <p>Frische Croissants</p>
-        </div>
-      </a>
+          <div class="section-two-card">
+            <img class="img-lable" src="img\croissant.jpg" alt="" />
+            <p>Frische Croissants</p>
+          </div>
+        </a>
+        <a href="#" onclick="addrecipe(1)">
+          <div class="section-two-card">
+            <img class="img-lable" src="img\croissant.jpg" alt="" />
+            <p>Frische Croissants</p>
+          </div>
+        </a>
+        <a href="#" onclick="addrecipe(3)">
+          <div class="section-two-card">
+            <img class="img-lable" src="img\croissant.jpg" alt="" />
+            <p>Frische Croissants</p>
+          </div>
+        </a>
 
       </div>
     </div>
@@ -118,5 +125,5 @@
   </footer>
 
 </body>
-
+<script src="script.js"></script>
 </html>
