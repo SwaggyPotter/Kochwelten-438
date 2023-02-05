@@ -107,10 +107,10 @@ function renderTable() {
 }
 
 
-/*Menu button*/ 
+/*Menu button*/
 menu.addEventListener('click', () => {
     nav.style.display = 'flex';
-}
+})
 function closeMenu() {
     let nav = document.getElementById('nav')
     nav.style.display = 'none';
