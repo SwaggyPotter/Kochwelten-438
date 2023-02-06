@@ -1,8 +1,3 @@
-let menu = document.getElementById('menu')
-let navCloseBTN = document.getElementById('closeMenu')
-let nav = document.getElementById('nav')
-
-
 // >>Load localStorage for Rendering startPage
 function render() {
     includeHTML();
@@ -11,7 +6,6 @@ function render() {
         sectionTwo();
     }, 200)
 }
-
 
 
 function randomRecipe() {
@@ -108,17 +102,23 @@ function renderTable() {
 
 
 /*Menu button*/
-menu.addEventListener('click', () => {
+function openMenu(){
+    getDiviceSize();
+
+    let nav = document.getElementById('nav');
     nav.style.display = 'flex';
-})
+}
+
+
 function closeMenu() {
     let nav = document.getElementById('nav')
     nav.style.display = 'none';
 }
+
+
 addEventListener('resize', () => {
     let navCloseBTN = document.getElementById('closeMenu')
     let nav = document.getElementById('nav')
-
 
     if (window.innerWidth > 768) {
         nav.classList.remove('handyNav');
@@ -133,6 +133,8 @@ addEventListener('resize', () => {
         nav.style.display = 'none';
     }
 })
+
+
 function getDiviceSize() {
     let nav = document.getElementById('nav')
     let navCloseBTN = document.getElementById('closeMenu')
@@ -152,7 +154,7 @@ function getDiviceSize() {
 }
 
 
-/*include header template*/
+/*<<<<<<<<<<<include header template*/
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
