@@ -1,7 +1,13 @@
+let menu = document.getElementById('menu')
+let navCloseBTN = document.getElementById('closeMenu')
+
+
+
 // >>Load localStorage for Rendering startPage
 function render() {
     includeHTML();
     setTimeout(() => {
+        getDiviceSize();
         randomRecipe();
         sectionTwo();
     }, 200)
@@ -103,12 +109,9 @@ function renderTable() {
 
 /*Menu button*/
 function openMenu(){
-    getDiviceSize();
-
-    let nav = document.getElementById('nav');
+    let nav = document.getElementById('nav')
     nav.style.display = 'flex';
 }
-
 
 function closeMenu() {
     let nav = document.getElementById('nav')
