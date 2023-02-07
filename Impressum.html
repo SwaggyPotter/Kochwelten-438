@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="Impressum-style.css">
 </head>
 
-<body>
+<body onload="render()">
+
+    <header w3-include-html="../templates/header.html" class="header"></header>
+
     <h1>Impressum</h1>
 
     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
@@ -24,6 +27,8 @@
         E-Mail: mustermann@musterfirma.de</p>
 
     <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
-</body>
 
+    <footer w3-include-html="../templates/footer.html"></footer>
+</body>
+<script src="../script.js"></script>
 </html>
