@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rezept1</title>
+    <title>Recipe</title>
 
     <!-- Favicon -->
     <link
@@ -19,21 +19,6 @@
   </head>
   <body onload="renderRecipe(); includeHTML()">
 
-    <!-- <header class="header">
-      <div class="header-navbar">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Logo-Kochwelt" />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Start</a></li>
-            <li id="linkDailyRecipe"><a href="#">Rezept des Tages</a></li>
-            <li><a href="contact/contact.html">Kontakte</a></li>
-            <li><a href="footer_links/Impressum.html">Impressum</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
     <header w3-include-html="templates\header.html" class="header"></header>
 
       <section class="recipe-head padding">
@@ -69,7 +54,7 @@
       <div class="portion">
         <p>Zutaten für</p>
         <div class="recipe-portion">
-          <input id="input-portion" type="number" min="1" value="2"/><!-- todo input multyplicate-->
+          <input id="input-portion" type="number" min="1" value="2"/>
           <button class="open-recipe" onclick="renderTable()">Portionen</button>
         </div>
       </div>
@@ -79,7 +64,6 @@
 
       <div class="preperation">
         <h1>Zubereitung</h1>
-        <!-- ! 2x? -->
         <div class="labels">
 
           <div class="lable">
@@ -122,51 +106,6 @@
           <p id="name-creator">Tim, Sanjaya, Mathias</p>
         </div>
       </section>
-
-    <!-- <footer>
-      <div>
-        <img
-          class="socialMediaIconStyle"
-          src="img/logo.png"
-          alt="Logo-Kochwelt"
-        />
-        <h3><a href="footer_links/Impressum.html">Impressum</a></h3>
-        <h3><a href="footer_links/AGB.html">AGB</a></h3>
-        <h3><a href="footer_links/datenschutz.html">Datenschutz</a></h3>
-      </div>
-      <div>
-        <a href="https://de-de.facebook.com/"
-          ><img
-            class="socialMediaIconStyle"
-            src="footer_links/footer-IMG/facebook_hex_icon.png"
-            alt="facebook icon"
-        /></a>
-        <a href="https://www.instagram.com/"
-          ><img
-            class="socialMediaIconStyle"
-            src="footer_links/footer-IMG/instagram_hex_icon.png"
-            alt="instagram icon"
-        /></a>
-        <a href="https://www.pinterest.de/"
-          ><img
-            class="socialMediaIconStyle"
-            src="footer_links/footer-IMG/pintrest_hex_icon.png"
-            alt="printerest icon"
-        /></a>
-        <a href="https://www.tumblr.com/"
-          ><img
-            class="socialMediaIconStyle"
-            src="footer_links/footer-IMG/tumblr_hex_icon.png"
-            alt="tublr icon"
-        /></a>
-        <a href="https://twitter.com/"
-          ><img
-            class="socialMediaIconStyle"
-            src="footer_links/footer-IMG/twitter_hex_icon.png"
-            alt="twitter icon"
-        /></a>
-      </div>
-    </footer> -->
 
     <footer w3-include-html="templates\footer.html"></footer>
 
