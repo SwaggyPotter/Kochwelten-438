@@ -4,3 +4,6 @@ main{
 .background-classTwo{
     background-color: var(--background-color-two);
 }
+.space li{
+    margin-left: 16px;
+}
