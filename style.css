@@ -504,6 +504,7 @@ table th {
     width: 230px;
     height: 160px;
     border-radius: var(--img-border-radius);
+    cursor: pointer;
   }
 
   .header-headline {
