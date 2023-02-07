@@ -1,18 +1,6 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
 main{
     max-width: 100%;
 }
-
-.background-classOne{
-    width: 100%;
-    background-color: rgba(128, 128, 128, 0.164);
-}
-
 .background-classTwo{
-    width: 100%;
-    background-color: rgba(128, 128, 128, 0.39);
+    background-color: var(--background-color-two);
 }
