@@ -1,0 +1,8 @@
+#Erlaubt Kommentare
+User-agent: *
+
+#Seiten die nicht über eine Suchmaschine gefunden werden sollen! Verbietet alle Rechtliche Seiten.
+Disallow: /agb.html
+Disallow: /impressum.html
+Disallow: /datenschutz.html
+Disallow: /impressum.html
