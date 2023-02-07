@@ -134,6 +134,7 @@ nav ul li a:hover::after {
   height: 23rem;
   border-radius: var(--img-border-radius);
   object-fit: cover;
+  cursor: pointer;
 }
 
 .header-headline {
