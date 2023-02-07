@@ -1,9 +1,0 @@
-main{
-    max-width: 100%;
-}
-.background-classTwo{
-    background-color: var(--background-color-two);
-}
-.space li{
-    margin-left: 16px;
-}
