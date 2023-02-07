@@ -5,4 +5,3 @@ User-agent: *
 Disallow: /agb.html
 Disallow: /impressum.html
 Disallow: /datenschutz.html
-Disallow: /impressum.html
