@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz-Kochwelt</title>
-    <link rel="stylesheet" href="datenschutz-style.css">
+    <link rel="stylesheet" href="style/datenschutz-style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="render()">
+    <header w3-include-html="templates/header.html" class="header"></header>
+
     <h1>Datenschutzerklärung</h1>
     <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
     </p>
@@ -136,6 +140,7 @@
                 href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank"
                 rel="noopener">externe Datenschutzbeauftragte</a> (Version #2020-09-30).</em></p>
 
+    <footer w3-include-html="templates/footer.html"></footer>
 </body>
 
 </html>

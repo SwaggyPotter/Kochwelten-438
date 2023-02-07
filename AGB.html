@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGB-Kochwelt</title>
 
-    <link rel="stylesheet" href="AGB-style.css">
+    <link rel="stylesheet" href="style/AGB-style.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 
-<body>
+<body onload="render()">
 
-    <header w3-include-html="../templates/header.html" class="header"></header>
+    <header w3-include-html="templates/header.html" class="header"></header>
 
     <main>
         <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
@@ -299,9 +300,9 @@
 
     </main>
 
-    <footer w3-include-html="../templates/footer.html"></footer>
+    <footer w3-include-html="templates/footer.html"></footer>
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
