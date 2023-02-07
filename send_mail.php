@@ -2,7 +2,8 @@
 
 ########### CONFIG ###############
 
-$recipient = 'sanjaya12stha@gmail.com';
+// $recipient = 'sanjaya12stha@gmail.com';
+$recipient = 'mathiaskohler@web.de';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
