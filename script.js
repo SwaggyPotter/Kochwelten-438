@@ -42,7 +42,7 @@ function randomRecipe() {
 }
 
 
-// Load index.html section-one
+// Ren index.html section-one
 function generateSectionOne(recipe, num){
     document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
@@ -63,6 +63,7 @@ function generateSectionOne(recipe, num){
 }
 
 
+// 
 function sectionTwo() {
     let sectionTwo = document.getElementById('section-two-cards');
     sectionTwo.innerHTML = '';
