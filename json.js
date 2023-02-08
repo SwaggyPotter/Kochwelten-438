@@ -49,4 +49,26 @@ let recipes = [
         "lableLengthOfTime" : "1 Stunde 25 Minuten",
         "dailyText" :  `Mit wenig Arbeitsaufwand kannst du dir ein herzhaftes Essen zaubern. Die meiste Arbeit übernimmt für dich dein Ofen. Somit kannst du dich nebenher um andere Sachen kümmern.`,
     },
+    {
+        "name" : "Flusskrebse an Apfel-Avocado-Carpaccio",
+        "img" : `img/flusskrebse-an-apfel-avocado-carpaccio.webp`,
+        "time" : "40 Minuten",
+        "difficulty" : "normal",
+        "calender" : "07.02.2023",
+        "portion" : 1,
+        "quantity" : ['0.5','0.5','25','35','0.25','0.25','0.25','1.5','1','1'],
+        "unit" :     ['x','x','g','g','x','EL','TL','EL','Prise','Prise'],
+        "ingredient" : ['Avocados','Apfel','Flusskrebse','Tomaten','Zwiebeln','Weißwein-Essig','Tomatenmark','Olivenöl','Salz und Pfeffer','Zucker'],
+        "preparation" : `Für die Vinaigrette die Tomaten kurz in kochendes Wasser tauchen, bis die Haut "runzlig" wird. 
+        Anschließend mit kaltem Wasser abschrecken und die Tomaten häuten. Nun die Tomaten entkernen und in feine Würfel schneiden. 
+        Die Zwiebeln ebenfalls häuten und in feine Würfel schneiden.
+        Den Essig mit dem Tomatenmark, etwas Salz und Pfeffer, dem Zucker und dem Olivenöl verrühren. 
+        Abschmecken und bei Bedarf nachwürzen. Die Tomaten und die Zwiebelwürfel in die Vinaigrette geben und ordentlich verrühren.
+        Für das Carpaccio die Avocado schälen, vierteln und den Stein entfernen. Apfel waschen, ebenfalls vierteln und entkernen. Anschließend beides in dünne Scheiben schneiden. Apfel evtl. kurz noch mit Zitronensaft beträufeln, damit er nicht braun wird. Die Scheiben abwechselnd auf einem Teller anrichten. Die Flusskrebse dazu geben und mit der Vinaigrette beträufeln.`,
+        "profilPic" : `img/tim.profilBild.jpg`,
+        "creator" : "Tim Mellentin",
+        "lablePreperationClock" : "40 Minuten",
+        "lableLengthOfTime" : "40 Minuten",
+        "dailyText" :  `Ohne viel Aufwand zum Perfekten Gericht`,
+    },
     ]

@@ -466,7 +466,9 @@ table th {
 }
 
 @media screen and (max-width:565px) {
-
+  .padding {
+    padding: 0 10%;
+  }
   /* section header */
   .header-navbar {
     height: 100px;
@@ -487,6 +489,13 @@ table th {
 
   .section-three {
     padding: 30px;
+  }
+  .labels {
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
   }
 }
 
@@ -536,6 +545,16 @@ table th {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .labels {
+    margin: 0 0 50px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
 }
