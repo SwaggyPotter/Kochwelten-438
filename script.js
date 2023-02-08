@@ -10,7 +10,7 @@ function render() {
         getDiviceSize();
         randomRecipe();
         sectionTwo();
-    }, 200)
+    }, 10)
 }
 
 
@@ -35,7 +35,7 @@ function randomRecipe() {
     //     <button class="open-recipe" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
     // </div>
     // `;
-    generateSectionOne(recipe, num);
+    renderSectionOne(recipe, num);
     document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
     <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.getItem('recipeNumber','${num}')">Rezept des Tages</a>
     `;
@@ -43,7 +43,7 @@ function randomRecipe() {
 
 
 // Render index.html section-one
-function generateSectionOne(recipe, num){
+function renderSectionOne(recipe, num){
     document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
     <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
@@ -63,7 +63,7 @@ function generateSectionOne(recipe, num){
 }
 
 
-// 
+// Render index.html section-two
 function sectionTwo() {
     let sectionTwo = document.getElementById('section-two-cards');
     sectionTwo.innerHTML = '';
