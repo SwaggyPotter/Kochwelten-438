@@ -42,7 +42,7 @@ function randomRecipe() {
 }
 
 
-// Ren index.html section-one
+// Render index.html section-one
 function generateSectionOne(recipe, num){
     document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
