@@ -10,7 +10,7 @@ function render() {
         getDiviceSize();
         randomRecipe();
         sectionTwo();
-    }, 50)
+    }, 100)
 }
 
 
@@ -18,6 +18,7 @@ function render() {
 function randomRecipe() {
     const num = Math.floor(Math.random() * recipes.length);
     let recipe = recipes[num];
+    localStorage.setItem('recipeNumber','${num}');
 
     renderSectionOne(recipe, num);
     document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
