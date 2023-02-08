@@ -65,7 +65,9 @@
   z-index: 2;
   display: none;
   flex-direction: column;
-  background-color: #04aa6d;
+  border: solid black 1px;
+  background-color: #ffffff;
+  border-radius: 20px 0;
   padding: 50px;
 }
 .handyNav ul {
