@@ -19,6 +19,31 @@ function randomRecipe() {
     const num = Math.floor(Math.random() * recipes.length);
     let recipe = recipes[num];
 
+    // document.getElementById('section-one').innerHTML = '';
+    // document.getElementById('section-one').innerHTML = /*html*/`
+    // <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
+    //     <img class="img-big-croissant" src="${recipe["img"]}" />
+    // </a>
+
+    // <div class="header-headline">
+    //     <div class="header-headline-child">
+    //         <h2>${recipe["name"]}</h2>
+    //         <p class="headline-big-img">
+    //         ${recipe["dailyText"]}
+    //         </p>
+    //     </div>
+    //     <button class="open-recipe" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
+    // </div>
+    // `;
+    generateSectionOne(recipe, num);
+    document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
+    <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.getItem('recipeNumber','${num}')">Rezept des Tages</a>
+    `;
+}
+
+
+// Load index.html section-one
+function generateSectionOne(recipe, num){
     document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
     <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
@@ -34,9 +59,6 @@ function randomRecipe() {
         </div>
         <button class="open-recipe" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
     </div>
-    `;
-    document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
-    <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.getItem('recipeNumber','${num}')">Rezept des Tages</a>
     `;
 }
 
