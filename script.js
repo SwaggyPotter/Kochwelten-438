@@ -10,7 +10,7 @@ function render() {
         getDiviceSize();
         randomRecipe();
         sectionTwo();
-    }, 10)
+    }, 50)
 }
 
 
