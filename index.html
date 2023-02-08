@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt-438</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kochwelt-438</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="img/icons/logo_favcon.ico"
+    />
+    <!-- Links -->
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="json.js"></script>
+  </head>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/vnd.microsoft.icon" href="img/icons/logo_favcon.ico" />
-  <!-- Links -->
-  <link rel="stylesheet" href="style/style.css" />
-  <script src="json.js"></script>
+  <body onload="render()">
+    <header w3-include-html="templates\header.html" class="header"></header>
 
-</head>
+    <section id="section-one">
+      <!-- <div class="img-big"> -->
+      <a href="#">
+        <img class="img-big-croissant" src="img\croissant.jpg" />
+      </a>
 
-<body onload="render()">
+      <div class="header-headline">
+        <div class="header-headline-child">
+          <h2>Französische Croissants</h2>
+          <p class="headline-big-img">
+            Schmackhafte Croissants können auch zu hause sehr einfach gebacken
+            werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
+            Frühstück zaubern.
+          </p>
+        </div>
+        <button class="open-recipe">Rezept Öffnen</button>
+      </div>
+      <!-- </div> -->
+    </section>
 
-  <header w3-include-html="templates\header.html" class="header"></header>
+    <section class="section-two">
+      <div class="section-two-container">
+        <h2>Lust auf was neues?</h2>
 
-  <section id="section-one">
-    <!-- <div class="img-big"> -->
-    <a href="#"> <img class="img-big-croissant" src="img\croissant.jpg" /> </a>
+        <div id="section-two-cards">
+          <a href="#" onclick="addrecipe(0)">
+            <div class="section-two-card">
+              <img class="img-lable" src="img\croissant.jpg" alt="" />
+              <p>Frische Croissants</p>
+            </div>
+          </a>
+          <a href="#" onclick="addrecipe(1)">
+            <div class="section-two-card">
+              <img class="img-lable" src="img\croissant.jpg" alt="" />
+              <p>Frische Croissants</p>
+            </div>
+          </a>
+          <a href="#" onclick="addrecipe(3)">
+            <div class="section-two-card">
+              <img class="img-lable" src="img\croissant.jpg" alt="" />
+              <p>Frische Croissants</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="header-headline">
-      <div class="header-headline-child">
-        <h2>Französische Croissants</h2>
-        <p class="headline-big-img">
-          Schmackhafte Croissants können auch zu hause sehr einfach gebacken
-          werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
-          Frühstück zaubern.
+    <section class="section-three">
+      <div>
+        <h2 class="section-three-header">Pfanne vs. Wok - Was ist besser?</h2>
+      </div>
+      <div class="section-three-container">
+        <img class="img-lable" src="img\wok.jpg" />
+
+        <p>
+          Zwischen einem Wok und einer herkömmlichen Pfanne gibt es einige
+          Unterschiede, die sich auf die Zubereitung und den Geschmack von
+          Gerichten auswirken. Du bist dir unschlüssig, was die Unterschiede
+          sind und welche der beiden Gadgets du besser gebrauchen kannst? Wir
+          erklären dir alle Unterschiede und geben dir eine Entscheidungshilfe,
+          ob du zum Wok oder zur Pfanne greifen solltest. 
+          <br>
+          <br>
+          (Textquelle:
+          <a href="https://www.reishunger.de/wissen/article/618/unterschiede-von-wok-pfanne#:~:text=Ein%20Wok%20ist%20kugelig%20und,werden%20auch%20als%20Schmorpfannen%20bezeichnet.">https://www.reishunger.de</a>
+          )
         </p>
+        
       </div>
-      <button class="open-recipe">Rezept Öffnen</button>
-    </div>
-    <!-- </div> -->
-  </section>
+    </section>
 
-  <section class="section-two">
-    <div class="section-two-container">
-      <h2>Lust auf was neues?</h2>
-
-      <div id="section-two-cards">
-
-        <a href="#" onclick="addrecipe(0)">
-          <div class="section-two-card">
-            <img class="img-lable" src="img\croissant.jpg" alt="" />
-            <p>Frische Croissants</p>
-          </div>
-        </a>
-        <a href="#" onclick="addrecipe(1)">
-          <div class="section-two-card">
-            <img class="img-lable" src="img\croissant.jpg" alt="" />
-            <p>Frische Croissants</p>
-          </div>
-        </a>
-        <a href="#" onclick="addrecipe(3)">
-          <div class="section-two-card">
-            <img class="img-lable" src="img\croissant.jpg" alt="" />
-            <p>Frische Croissants</p>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section-three">
-    <div>
-      <h2 class="section-three-header">
-        Pfanne vs. Wok - Was ist besser?
-      </h2>
-    </div>
-    <div class="section-three-container">
-      <img class="img-lable" src="img\wok.jpg">
-
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laboriosam
-        nobis ipsa doloremque voluptatum totam consectetur veritatis repudiandae. Aut, hic. Cupiditate impedit
-        consectetur sit vero? Dolorum, mollitia! Ipsum, alias corporis?</p>
-    </div>
-  </section>
-
-  <footer w3-include-html="templates\footer.html"></footer>
-
-</body>
-<script src="script.js"></script>
-
+    <footer w3-include-html="templates\footer.html"></footer>
+  </body>
+  <script src="script.js"></script>
 </html>
