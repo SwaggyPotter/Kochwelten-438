@@ -32,6 +32,12 @@
 .height{
   min-height: calc(100vh - 100px - 125.85px);
 }
+.min-column{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
 /* <<<<<<< header */
 .header-navbar {
   height: 100px;
