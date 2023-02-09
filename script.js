@@ -14,7 +14,9 @@ function render() {
 }
 function renderBasic(){
     includeHTML();
-    getDiviceSize();
+    setTimeout(() => {
+        getDiviceSize();
+    }, 100)
 }
 
 
