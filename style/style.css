@@ -26,6 +26,9 @@
 .space{
   padding: 30px 20%;
 }
+.btn--border-radius{
+  border-radius: 0 var(--img-border-radius) var(--img-border-radius) 0;
+}
 /* <<<<<<< header */
 .header-navbar {
   height: 100px;
@@ -46,13 +49,17 @@
   z-index: 1;
 }
 #closeMenu{
+  position: absolute;
+  top: 16px;
+  right: 16px ;
   cursor: pointer;
   display: none;
   padding: 5px 8px;
-  background-color: red;
   width: 5px;
   border-radius: 100%;
   z-index: 3;
+  font-weight: bolder;
+  font-size: larger;
 }
 .desktopNav {
   position: inherit;
@@ -67,7 +74,7 @@
   flex-direction: column;
   border: solid black 1px;
   background-color: #ffffff;
-  border-radius: 20px 0;
+  border-radius: 0 0 0 20px;
   padding: 50px;
 }
 .handyNav ul {
@@ -195,6 +202,7 @@ nav ul li a:hover::after {
 #section-two-cards a {
   color: var(--black);
   text-decoration: none;
+  width: 140px;
 }
 
 .img-lable {
@@ -422,6 +430,12 @@ table th {
     justify-content: space-evenly;
     align-items: center;
   }
+  #section-two-cards a{
+    margin-bottom: 16px;
+  }
+  #section-two-cards a:last-child{
+    margin-bottom: 0;
+  }
 
   .section-three-image {
     display: flex;
@@ -464,6 +478,7 @@ table th {
     height: 3rem;
     color: white;
     margin-bottom: 0;
+    margin-top: 16px;
   }
 }
 
