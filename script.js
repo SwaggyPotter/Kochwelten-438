@@ -12,6 +12,10 @@ function render() {
         sectionTwo();
     }, 100)
 }
+function renderBasic(){
+    includeHTML();
+    getDiviceSize();
+}
 
 
 // Generate Random Recipe
