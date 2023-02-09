@@ -29,6 +29,9 @@
 .btn--border-radius{
   border-radius: 0 var(--img-border-radius) var(--img-border-radius) 0;
 }
+.height{
+  min-height: calc(100vh - 100px - 125.85px);
+}
 /* <<<<<<< header */
 .header-navbar {
   height: 100px;
@@ -196,7 +199,7 @@ nav ul li a:hover::after {
 #section-two-cards {
   display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 #section-two-cards a {
