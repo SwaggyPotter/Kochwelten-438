@@ -71,4 +71,23 @@ let recipes = [
         "lableLengthOfTime" : "40 Minuten",
         "dailyText" :  `Ohne viel Aufwand zum Perfekten Gericht`,
     },
+    {
+        "name" : "Momos",
+        "img" : `img/momo.jpeg`,
+        "time" : "10 Minuten",
+        "difficulty" : "simple",
+        "calender" : "04.02.2023",
+        "portion" : 4,
+        "quantity" : ['2', '2', '400', '1', '4','1','1','1','1'],
+        "unit" : ['Anzahl','Anzahl','g','große','Anzahl','Anzal','Bund','El','TL'],
+        "ingredient" : ['Zwiebel','Knoblauchzehe','Weißkohl','Karotte','Frühlingszwiebel','Chilischote','Korriander', 'Ghee','Salz'],
+        "preparation" : `Als erstes bereitet ihr die Füllung vor. Es ist sehr wichtig, dass Koriander und Zwiebel ganz fein gehackt bzw. geschnitten sind. Blumenkohl , Salz, Sonnenblumenöl, Kreuzkümmel sowie fein geschnittenen Koriander und Zwiebel in eine Schüssel geben und gut miteinander vermengen. Mit Frischhaltefolie zudecken und kühl stellen. Nachdem Teig fertig ist füllungin Teig geben und Kochen oder Frittiern.
+
+        `,
+        "profilPic" : `img/sanjaya.jpg`,
+        "creator" : "Sanjaya Shrestha",
+        "lablePreperationClock" : "15 Minuten",
+        "lableLengthOfTime" : "1 Stunde 25 Minuten",
+        "dailyText" :  `Fans gefüllter Teigtaschen können sich über eine Alternative zu Maultaschen, Ravioli und Co. freuen: Momos stammen aus der Himalaya-Region, wo die dampfgegarten Teigtaschen in vielen Variationen genossen werden. Ob vegetarisch oder mit Fleisch – unsere Momos haben's drauf beziehungsweise drin!`,
+    }
     ]
