@@ -31,7 +31,7 @@
   border-radius: 0 var(--img-border-radius) var(--img-border-radius) 0;
 }
 .height{
-  min-height: calc(100vh - 100px - 147px);
+  min-height: calc(100vh - 100px - 148px);
 }
 .min-column{
   display: flex;
@@ -260,7 +260,7 @@ nav ul li a:hover::after {
 /* >>>>>>> footer*/
 
 footer{
-  background-color: rgb(132, 143, 143);
+  background-color: var(--background-color-footer);
 }
 
 .footer-container{
@@ -280,7 +280,7 @@ font-size: 12px;
 
 .footer-container-second-column a{
 text-decoration: none;
-color: black;
+color: var(--black);
 display: flex;
 flex-direction:column ;
 text-align: center;
