@@ -25,6 +25,10 @@
       width: 300px;
       margin-bottom: 50px;
     }
+
+    .fa-5x {
+      font-size: 3em !important;
+  }
   }
   
   @media screen and (max-width:768px) {
@@ -127,8 +131,8 @@
       gap: 10px;
     }
   }
-  
-  @media screen and (max-width:400px) {
+  /* 400 */
+  @media screen and (max-width:670px) {
     .footer-container{
       display: grid;
       grid-template: repeat(2,1fr) / repeat(2,1fr) 

@@ -231,6 +231,7 @@ nav ul li a:hover::after {
 /* <<<<<<<<<< Section 3 */
 .section-three {
   padding: var(--padding);
+  flex-wrap: wrap;
 }
 
 .section-three h2 {
@@ -243,6 +244,7 @@ nav ul li a:hover::after {
   flex-direction: row-reverse;
   justify-content: space-between;
   gap: 16px;
+  /* flex-wrap: wrap; */
 }
 
 .section-three p{
@@ -324,7 +326,7 @@ transform: translate(0, -8);
 
 
 .fa-5x {
-  font-size: 30px;
+  font-size: 4em !important;
 }
 
 

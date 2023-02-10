@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 // $recipient = 'sanjaya12stha@gmail.com';
-$recipient = 'mathiaskohler@web.de';
+$recipient = 'mathiaskohler@web.de', 'sanjaya12stha@gmail.com';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -41,7 +41,12 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $subject = '=?UTF-8?B?'.base64_encode($subject).'?='; // Codierung in 7 bit Code to show ä ö ü ... in subject
+        $headers = array(
+            "MIME-Version" => "1.0",
+            "Content-type" => "text/plain; charset=UTF-8",
+            "From" => "noreply@developerakademie.com",
+        );
 
         mail($recipient, $subject, $_POST['message'], $headers);
         header("Location: " . $redirect); 
