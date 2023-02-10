@@ -247,7 +247,7 @@ nav ul li a:hover::after {
 /* >>>>>>> footer*/
 
 footer{
-  background-color: rgb(132, 143, 143);
+  background-color: var(--background-color-footer);
 }
 
 .footer-container{
