@@ -11,22 +11,6 @@ body {
 }
 
 /*header section*/
-:root {
-  /* set global Variable */
-  --text-color-dark: black;
-  --background-bright: white;
-
-  --box-shadow: rgba(0, 0, 0, 0.2);
-  --hover-color: green;
-
-  font-size: 62.5%;
-  font-family: "Raleway", sans-serif;
-
-  --primary: #0c0c0c;
-  --secondary: #190e08;
-  --button: #268029;
-  --background-color-two: #ecebeb;
-}
 .hero {
   width: 100%;
   display: flex;
