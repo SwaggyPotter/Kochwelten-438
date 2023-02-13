@@ -12,7 +12,7 @@ function render() {
         sectionTwo();
     }, 100)
 }
-function renderBasic(){
+function renderBasic() {
     includeHTML();
     setTimeout(() => {
         getDiviceSize();
@@ -34,7 +34,7 @@ function randomRecipe() {
 
 
 // Render index.html section-one
-function renderSectionOne(recipe, num){
+function renderSectionOne(recipe, num) {
     document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
     <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
@@ -120,7 +120,7 @@ function renderTable() {
 
 
 /*Menu button*/
-function openMenu(){
+function openMenu() {
     let nav = document.getElementById('nav')
     nav.style.display = 'flex';
 }
@@ -135,17 +135,19 @@ addEventListener('resize', () => {
     let navCloseBTN = document.getElementById('closeMenu')
     let nav = document.getElementById('nav')
 
-    if (window.innerWidth > 768) {
-        nav.classList.remove('handyNav');
-        nav.classList.add('desktopNav');
-        navCloseBTN.style.display = 'none';
-        nav.style.display = 'flex';
-    }
-    else if (window.innerWidth < 768) {
-        nav.classList.remove('desktopNav');
-        nav.classList.add('handyNav');
-        navCloseBTN.style.display = 'flex';
-        nav.style.display = 'none';
+    if (nav) {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('handyNav');
+            nav.classList.add('desktopNav');
+            navCloseBTN.style.display = 'none';
+            nav.style.display = 'flex';
+        }
+        else if (window.innerWidth < 768) {
+            nav.classList.remove('desktopNav');
+            nav.classList.add('handyNav');
+            navCloseBTN.style.display = 'flex';
+            nav.style.display = 'none';
+        }
     }
 })
 
