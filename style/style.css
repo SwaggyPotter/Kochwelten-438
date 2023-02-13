@@ -44,7 +44,7 @@
 .header-navbar {
   height: 100px;
   background-color: var(--white);
-  padding: 0px 64px 0px 64px;
+  padding: 0px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -241,7 +241,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 10%;
 }
 .footer-container img{
   width: 165px;

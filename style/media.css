@@ -138,7 +138,7 @@
     .header-navbar {
       height: 100px;
       background-color: var(--white);
-      padding: 0px 64px 0px 64px;
+      padding: 0 5%;
       display: flex;
       align-items: center;
       box-shadow: 0px 5px 3px var(--box-shadow);
