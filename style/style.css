@@ -20,7 +20,7 @@
 
   --img-border-radius: 20px;
   --height100: 100%;
-  --padding: 30px 20%;
+  --padding: 30px 15%;
 }
 /* body{
   background-color: #710707;
@@ -150,7 +150,7 @@ nav ul li a:hover::after {
 }
 #section-one a{
   width: 50%;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 .header-headline h2 {
   color: var(--black);
@@ -190,7 +190,7 @@ nav ul li a:hover::after {
   justify-content: space-between;
   overflow-x: scroll;
   gap: 20px;
-  padding: 32px;
+  /* padding: 32px; */
 }
 #section-two-cards a {
   color: var(--black);
