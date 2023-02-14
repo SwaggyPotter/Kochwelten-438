@@ -190,7 +190,7 @@ nav ul li a:hover::after {
   justify-content: space-between;
   overflow-x: scroll;
   gap: 20px;
-  /* padding: 32px; */
+ padding-bottom: 8px;
 }
 #section-two-cards a {
   color: var(--black);
