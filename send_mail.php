@@ -2,8 +2,9 @@
 
 ########### CONFIG ###############
 
-// $recipient = 'sanjaya12stha@gmail.com';
 $recipient = 'mathiaskohler@web.de';
+$recipient1 = 'sanjaya12stha@gmail.com';
+$recipient2 = 'timmellentin@freenet.de';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -49,6 +50,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
         );
 
         mail($recipient, $subject, $_POST['message'], $headers);
+        mail($recipient1, $subject, $_POST['message'], $headers);
+        mail($recipient2, $subject, $_POST['message'], $headers);
         header("Location: " . $redirect); 
 
         break;
