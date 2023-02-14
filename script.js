@@ -10,13 +10,13 @@ function render() {
         getDiviceSize();
         randomRecipe();
         sectionTwo();
-    }, 50)
+    }, 100)
 }
 function renderBasic() {
     includeHTML();
     setTimeout(() => {
         getDiviceSize();
-    }, 50)
+    }, 100)
 }
 
 
@@ -28,7 +28,7 @@ function randomRecipe() {
 
     renderSectionOne(recipe, num);
     document.getElementById('linkDailyRecipe').innerHTML = /*html*/`
-    <a href="#" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept des Tages</a>
+    <a href="#" onclick="window.open('recipe.html','_self'); localStorage.setItem('recipeNumber','${num}')">Rezept des Tages</a>
     `;
 }
 
@@ -37,7 +37,7 @@ function randomRecipe() {
 function renderSectionOne(recipe, num) {
     document.getElementById('section-one').innerHTML = '';
     document.getElementById('section-one').innerHTML = /*html*/`
-    <a onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">
+    <a onclick="window.open('recipe.html','_self'); localStorage.setItem('recipeNumber','${num}')">
         <img class="img-big-croissant" src="${recipe["img"]}" />
     </a>
 
@@ -48,7 +48,7 @@ function renderSectionOne(recipe, num) {
             ${recipe["dailyText"]}
             </p>
         </div>
-        <button class="open-recipe btn-boRa-all" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
+        <button class="open-recipe btn-boRa-all" onclick="window.open('recipe.html','_self'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
     </div>
     `;
 }
@@ -64,8 +64,8 @@ function sectionTwo() {
 
         sectionTwo.innerHTML += /*html*/`
         <a href="#">
-    <div class="section-two-card" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${i}')">
-            <img class="img-lable" src="${recipe["img"]}" alt="" />
+    <div class="section-two-card" onclick="window.open('recipe.html','_self'); localStorage.setItem('recipeNumber','${i}')">
+            <img class="img-lable max-width" src="${recipe["img"]}" alt="" />
             <p>${recipe["name"]}</p>
     </div>
     </a>
