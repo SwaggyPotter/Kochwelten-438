@@ -10,13 +10,13 @@ function render() {
         getDiviceSize();
         randomRecipe();
         sectionTwo();
-    }, 100)
+    }, 50)
 }
 function renderBasic() {
     includeHTML();
     setTimeout(() => {
         getDiviceSize();
-    }, 100)
+    }, 50)
 }
 
 
