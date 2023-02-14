@@ -136,13 +136,13 @@ addEventListener('resize', () => {
     let nav = document.getElementById('nav')
 
     if (nav) {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 900) {
             nav.classList.remove('handyNav');
             nav.classList.add('desktopNav');
             navCloseBTN.style.display = 'none';
             nav.style.display = 'flex';
         }
-        else if (window.innerWidth < 768) {
+        else if (window.innerWidth < 900) {
             nav.classList.remove('desktopNav');
             nav.classList.add('handyNav');
             navCloseBTN.style.display = 'flex';
@@ -156,13 +156,13 @@ function getDiviceSize() {
     let nav = document.getElementById('nav')
     let navCloseBTN = document.getElementById('closeMenu')
 
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 900) {
         nav.classList.remove('handyNav');
         nav.classList.add('desktopNav');
         navCloseBTN.style.display = 'none';
         nav.style.display = 'flex';
     }
-    else if (window.innerWidth < 768) {
+    else if (window.innerWidth < 900) {
         nav.classList.remove('desktopNav');
         nav.classList.add('handyNav');
         navCloseBTN.style.display = 'flex';
