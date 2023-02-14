@@ -443,3 +443,20 @@ table th {
 .creator p {
   font-size: 16px;
 }
+/*<<<<<<<<<<< Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color-two); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.366); 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.767); 
+}
