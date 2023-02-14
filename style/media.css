@@ -26,6 +26,7 @@
     }
     #section-one a{
       width: 100%;
+      margin-bottom: 30px;
     }
     #section-two-cards {
       display: flex;

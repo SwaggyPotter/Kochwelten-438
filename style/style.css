@@ -170,6 +170,9 @@ nav ul li a:hover::after {
   margin-bottom: 3rem;
   cursor: pointer;
 }
+.btn-boRa-all{
+  border-radius: var(--img-border-radius);
+}
 .open-recipe:hover {
   box-shadow: 1px 1px 3px rgb(255, 255, 255) inset, 1px 1px 3px black;
 }
@@ -202,6 +205,7 @@ nav ul li a:hover::after {
   height: 300px;
   border-radius: var(--img-border-radius);
   object-fit: cover;
+  max-width: 300px;
 }
 .section-two-card p {
   text-align: center;

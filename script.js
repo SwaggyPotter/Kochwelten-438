@@ -48,7 +48,7 @@ function renderSectionOne(recipe, num) {
             ${recipe["dailyText"]}
             </p>
         </div>
-        <button class="open-recipe" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
+        <button class="open-recipe btn-boRa-all" onclick="window.open('recipe.html','_blank'); localStorage.setItem('recipeNumber','${num}')">Rezept Öffnen</button>
     </div>
     `;
 }
@@ -90,6 +90,7 @@ function renderRecipe() {//onload recipe.html
     document.getElementById(`img-creator`).src = `${recipe["profilPic"]}`;
     document.getElementById(`name-creator`).innerHTML = `${recipe["creator"]}`;
 
+    document.title = `${recipe["name"]}`;
     renderTable();
 }
 
