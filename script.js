@@ -98,9 +98,9 @@ function renderRecipe() {//onload recipe.html
 function renderTable() {
     let i = localStorage.getItem('recipeNumber', '${i}');
     let table = document.getElementById("table-ingredient");
-    let currentlyPortion = document.getElementById('input-portion').value;//portion quantity    
     let recipe = recipes[i];
-
+    let currentlyPortion = document.getElementById('input-portion').value;
+    
     table.innerHTML = '';// delete Table
 
     for (a = 0; a < recipe["ingredient"].length; a++) {//search Array
@@ -118,7 +118,6 @@ function renderTable() {
     `;
     }
 }
-
 
 /*Menu button*/
 function openMenu() {

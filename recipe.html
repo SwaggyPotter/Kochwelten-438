@@ -56,7 +56,7 @@
       <div class="portion">
         <p>Zutaten für</p>
         <div class="recipe-portion">
-          <input id="input-portion" type="number" min="1" value="2"/>
+          <input id="input-portion" type="number" min="1" value="2" oninput="validity.valid||(value='')"/>
           <button class="open-recipe btn--border-radius" onclick="renderTable()">Portionen</button>
         </div>
       </div>
