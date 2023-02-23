@@ -5,18 +5,40 @@ let cardBTNFor = document.getElementById('arrowFor')
 let cardCounter = 0;
 let slider = document.getElementById('pfanneCardSlider')
 
-cardBTNBack.addEventListener('click',()=>{
-    if(cardCounter == 1){
+
+
+
+cardBTNBack.addEventListener('click', () => {
+    if (cardCounter == 1 && window.innerWidth > 1225) {
         cardCounter = 0;
         slider.style.marginLeft = '0px'
     }
 })
-cardBTNFor.addEventListener('click',()=>{
-    if(cardCounter == 0){
+cardBTNFor.addEventListener('click', () => {
+    if (cardCounter == 0 && window.innerWidth > 1225) {
         cardCounter = 1;
         slider.style.marginLeft = '-800px'
     }
 })
+
+
+
+
+
+cardBTNBack.addEventListener('click', () => {
+    if (cardCounter == 1 && window.innerWidth < 1225) {
+        cardCounter = 0;
+        slider.style.marginLeft = '0px'
+    }
+})
+cardBTNFor.addEventListener('click', () => {
+    if (cardCounter == 0 && window.innerWidth < 1225) {
+        cardCounter = 1;
+        slider.style.marginLeft = '-500px'
+    }
+})
+
+
 
 
 // >>Load localStorage for Rendering startPage
@@ -116,7 +138,7 @@ function renderTable() {
     let table = document.getElementById("table-ingredient");
     let recipe = recipes[i];
     let currentlyPortion = document.getElementById('input-portion').value;
-    
+
     table.innerHTML = '';// delete Table
 
     for (a = 0; a < recipe["ingredient"].length; a++) {//search Array
