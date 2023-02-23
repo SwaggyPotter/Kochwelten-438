@@ -22,21 +22,46 @@ cardBTNFor.addEventListener('click', () => {
 })
 
 
-
-
-
 cardBTNBack.addEventListener('click', () => {
-    if (cardCounter == 1 && window.innerWidth < 1225) {
+    if (cardCounter == 1 && window.innerWidth < 1225 && window.innerWidth > 900) {
         cardCounter = 0;
         slider.style.marginLeft = '0px'
     }
 })
 cardBTNFor.addEventListener('click', () => {
-    if (cardCounter == 0 && window.innerWidth < 1225) {
+    if (cardCounter == 0 && window.innerWidth < 1225 && window.innerWidth > 900) {
         cardCounter = 1;
         slider.style.marginLeft = '-500px'
     }
 })
+
+
+cardBTNBack.addEventListener('click', () => {
+    if (cardCounter == 1 && window.innerWidth < 900 && window.innerWidth > 450) {
+        cardCounter = 0;
+        slider.style.marginLeft = '0px'
+    }
+})
+cardBTNFor.addEventListener('click', () => {
+    if (cardCounter == 0 && window.innerWidth < 900 && window.innerWidth > 450) {
+        cardCounter = 1;
+        slider.style.marginLeft = '-300px'
+    }
+})
+
+cardBTNBack.addEventListener('click', () => {
+    if (cardCounter == 1 && window.innerWidth < 450) {
+        cardCounter = 0;
+        slider.style.marginLeft = '0px'
+    }
+})
+cardBTNFor.addEventListener('click', () => {
+    if (cardCounter == 0 && window.innerWidth < 450) {
+        cardCounter = 1;
+        slider.style.marginLeft = '-200px'
+    }
+})
+
 
 
 
