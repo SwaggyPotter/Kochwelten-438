@@ -227,10 +227,14 @@ nav ul li a:hover::after {
 }
 .section-three-container {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  gap: 16px;
+  overflow-x: hidden;
+  max-width: 800px;
   /* flex-wrap: wrap; */
+}
+.centerContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .section-three p{
   width: 45%;
@@ -468,4 +472,28 @@ table th {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(128, 128, 128, 0.767); 
+}
+.pfanneWokSliderCard{
+  min-width: 800px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 16px;
+  transition: 1s;
+}
+#pfanneCardSlider{
+  margin-left: 0px;
+}
+.arrowLook{
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrowLook:hover{
+  background-color: rgba(128, 128, 128, 0.63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

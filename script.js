@@ -1,6 +1,22 @@
 let menu = document.getElementById('menu')
 let navCloseBTN = document.getElementById('closeMenu')
+let cardBTNBack = document.getElementById('arrowBack')
+let cardBTNFor = document.getElementById('arrowFor')
+let cardCounter = 0;
+let slider = document.getElementById('pfanneCardSlider')
 
+cardBTNBack.addEventListener('click',()=>{
+    if(cardCounter == 1){
+        cardCounter = 0;
+        slider.style.marginLeft = '0px'
+    }
+})
+cardBTNFor.addEventListener('click',()=>{
+    if(cardCounter == 0){
+        cardCounter = 1;
+        slider.style.marginLeft = '-800px'
+    }
+})
 
 
 // >>Load localStorage for Rendering startPage

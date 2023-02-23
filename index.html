@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt</title>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/vnd.microsoft.icon"
-      href="img/icons/logo_favcon.ico"
-    />
-    <!-- Links -->
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/media.css">
-    <script src="json.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt</title>
 
-  <body onload="render()">
-    <header w3-include-html="templates\header.html" class="header"></header>
+  <!-- Favicon -->
+  <link rel="icon" type="image/vnd.microsoft.icon" href="img/icons/logo_favcon.ico" />
+  <!-- Links -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/media.css">
+  <script src="json.js"></script>
+</head>
 
-    <div class="height min-column">
+<body onload="render()">
+  <header w3-include-html="templates\header.html" class="header"></header>
+
+  <div class="height min-column">
 
     <section id="section-one">
       <!-- <div class="img-big"> -->
@@ -74,29 +71,66 @@
       <div>
         <h2 class="section-three-header">Pfanne vs. Wok - Was ist besser?</h2>
       </div>
-      <div class="section-three-container">
-        <img class="img-lable" src="img\wok.jpg" />
 
-        <p>
-          Zwischen einem Wok und einer herkömmlichen Pfanne gibt es einige
-          Unterschiede, die sich auf die Zubereitung und den Geschmack von
-          Gerichten auswirken. Du bist dir unschlüssig, was die Unterschiede
-          sind und welche der beiden Gadgets du besser gebrauchen kannst? Wir
-          erklären dir alle Unterschiede und geben dir eine Entscheidungshilfe,
-          ob du zum Wok oder zur Pfanne greifen solltest. 
-          <br>
-          <br>
-          (Textquelle:&shy;
-          <a href="https://www.reishunger.de/wissen/article/618/unterschiede-von-wok-pfanne#:~:text=Ein%20Wok%20ist%20kugelig%20und,werden%20auch%20als%20Schmorpfannen%20bezeichnet.">https://www.reishunger.de</a>
-          )
-        </p>
-        
+      <div class="centerContainer">
+
+        <div id="arrowBack" class="arrowLook">
+          <span class="material-symbols-outlined ">
+            arrow_back
+          </span>
+        </div>
+
+
+        <div class="section-three-container">
+          <div id="pfanneCardSlider" class="pfanneWokSliderCard">
+            <img class="img-lable" src="img\wok.jpg" />
+            <p>
+              Zwischen einem Wok und einer herkömmlichen Pfanne gibt es einige
+              Unterschiede, die sich auf die Zubereitung und den Geschmack von
+              Gerichten auswirken. Du bist dir unschlüssig, was die Unterschiede
+              sind und welche der beiden Gadgets du besser gebrauchen kannst? Wir
+              erklären dir alle Unterschiede und geben dir eine Entscheidungshilfe,
+              ob du zum Wok oder zur Pfanne greifen solltest.
+              <br>
+              <br>
+              (Textquelle:&shy;
+              <a
+                href="https://www.reishunger.de/wissen/article/618/unterschiede-von-wok-pfanne#:~:text=Ein%20Wok%20ist%20kugelig%20und,werden%20auch%20als%20Schmorpfannen%20bezeichnet.">https://www.reishunger.de</a>
+              )
+            </p>
+          </div>
+
+          <div class="pfanneWokSliderCard">
+            <img class="img-lable" src="img/pfanne.jpg" />
+            <p>
+              Der offensichtlichste und wichtigste Unterschied ist die Form. Ein Wok ist kugelig und es gibt keinen
+              Unterschied zwischen dem Boden und der Wand. Der Boden einer Pfanne hingegen ist flach. Die Größe der
+              Fläche des Bodens kann dabei variieren. Hohe Pfannen werden auch als Schmorpfannen bezeichnet. Damit ein
+              Wok auch in Haushaltsküchen Verwendung finden kann, haben diese zwar eine kugelige Form, sind am Boden
+              aber auch minimal abgeflacht, damit sie auf dem Herd stehen können.
+              <br>
+              <br>
+              (Textquelle:&shy;
+              <a
+                href="https://www.reishunger.de/wissen/article/618/unterschiede-von-wok-pfanne#:~:text=Ein%20Wok%20ist%20kugelig%20und,werden%20auch%20als%20Schmorpfannen%20bezeichnet.">https://www.reishunger.de</a>
+              )
+            </p>
+          </div>
+        </div>
+
+        <div id="arrowFor" class="arrowLook">
+          <span class="material-symbols-outlined ">
+            arrow_forward
+          </span>
+        </div>
+
       </div>
     </section>
 
   </div>
 
-    <footer w3-include-html="templates\footer.html" class="footer-container"></footer>
-  </body>
-  <script src="script.js"></script>
+  <footer w3-include-html="templates\footer.html" class="footer-container"></footer>
+</body>
+<script src="script.js"></script>
+
 </html>
